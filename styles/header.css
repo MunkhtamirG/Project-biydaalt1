@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../Fonts/Poppins/Poppins-Black.ttf);
+}
+#logo {
+  display: flex;
+  width: 180px;
+  height: 40px;
+  margin-left: 120px;
+  margin-top: 8px;
+}
+#text {
+  color: #f17228;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+#name {
+  margin-left: 5px;
+  justify-content: center;
+  align-self: center;
+}
+p {
+  margin: 0px;
+}
+#home {
+  display: flex;
+}
+#searchbox {
+  background-image: url(../images/.png);
+  background-repeat: no-repeat;
+  background-position: 3% 50%;
+}
+input::placeholder {
+  padding-left: 20px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 4px;
+  width: 384px;
+  height: 40px;
+  margin-left: 426px;
+  margin-top: 8px;
+}
