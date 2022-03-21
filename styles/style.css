@@ -1,0 +1,10 @@
+#header {
+  display: flex;
+}
+#homeicon {
+  position: absolute;
+  left: 8.33%;
+  right: 88.89%;
+  top: 14.29%;
+  bottom: 14.29%;
+}
