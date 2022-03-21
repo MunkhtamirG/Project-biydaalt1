@@ -1,0 +1,31 @@
+.slider {
+    height: 496px;
+    background-image: url(../images/base.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#mealpic {
+    width: 588px;
+    height: 400px;
+}
+#mstarsfd {
+    width: 486px;
+    height: 216px;
+}
+#food2 {
+    z-index: 2;
+    background-image: url(../images/b8d96672cb041c452728a1daa273e712\ 1.png);
+}
+#group521 {
+    width: 467.5px;
+    height: 369.08px;
+    justify-content: center;
+    align-self: center;
+}
+#food1 {
+    z-index: 2;
+    position: absolute;
+    filter: drop-shadow(0px 10px 40px rgba(112, 87, 72, 0.3));
+}
