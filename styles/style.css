@@ -1,10 +1,31 @@
-#header {
+#menu {
   display: flex;
 }
-#homeicon {
+
+.homeicon {
   position: absolute;
-  left: 8.33%;
-  right: 88.89%;
-  top: 14.29%;
+  left: 120px;
+  top: 8px;
   bottom: 14.29%;
+  width: 40px;
+  height: 40px;
+}
+html {
+  max-width: 1440px;
+  background-color: #fdfdfd;
+}
+p {
+  width: 126px;
+  height: 30px;
+  top: 5px;
+  left: 5px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f17228;
+  position: absolute;
 }
