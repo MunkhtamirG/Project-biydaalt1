@@ -7,20 +7,20 @@
   justify-content: space-evenly;
 }
 #mealpic {
-  width: 588px;
-  height: 400px;
+  /* width: 588px; */
+  /* height: 400px; */
+  align-content: center;
 }
 #mstarsfd {
   width: 486px;
   height: 216px;
 }
 #food2 {
-  z-index: 2;
-  background-image: url(../images/b8d96672cb041c452728a1daa273e712\ 1.png);
+  z-index: 1;
 }
 #group521 {
-  width: 467.5px;
-  height: 369.08px;
+  /* width: 467.5px; */
+  /* height: 369.08px; */
   justify-content: center;
   align-self: center;
 }
