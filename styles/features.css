@@ -5,6 +5,8 @@
       #f17228 -90.18%,
       rgba(255, 255, 255, 0) 41.19%
     );
+    align-content: center;
+    display: flex;
   }
   
   #inner {

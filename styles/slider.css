@@ -2,7 +2,7 @@
     height: 496px;
     background-image: url(../images/base.png);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100%;
     display: flex;
     justify-content: space-evenly;
   }

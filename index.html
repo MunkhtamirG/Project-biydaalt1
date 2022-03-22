@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food delivery</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/card.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/features.css">
   </head>
   <body>
-    <header id="home">
+    <header>
+      <div>
       <div id="logo">
         <img src="images/iamage.png" alt="icon" id="homeicon" />
         <p id="name">Food Delivery</p>
@@ -26,15 +27,16 @@
         <input type="search" placeholder="ХАЙХ" id="searchbox" />
       </div>
       <div id="busketlogin">
-        <div>
-          <img src="images/busket icon.png" alt="busketicon" />
-          <a class="loginbusket" href="#">САГС</a>
+        <div class="lobu"> 
+          <img src="images/busket icon.png" alt="busketicon" style="width: 16px; height: 14px;" />
+          <a class="loginbusket" href="#">Сагс</a>
         </div>
-        <div>
-          <img src="images/user icon.png" alt="loginicon" />
-          <a class="loginbusket" href="#">НЭВТРЭХ</a>
+        <div class="bulo">
+          <img src="images/user icon.png" alt="loginicon" style="width: 16px; height: 14px;" />
+          <a class="loginbusket" href="#">Нэвтрэх</a>
         </div>
       </div>
+    </div>
     </header>
     <main>
       <div class="slider">
@@ -317,24 +319,48 @@
           </div>
         </div>
       </div>
-      <footer>
-        <div class="uptext">
-          <img src="images/footlogo.png" alt="" width="176px" height="40px" />
-          <div class="footmenu">
-            <p>Нүүр</p>
-            <p>Хоолны цэс</p>
-            <p>Хоолны цэс</p>
-          </div>
-          <div class="contact">
-            <p>Холбоо барих</p>
-            <p>(976) 77123456</p>
-            <p>(976) 77123456</p>
-          </div>
-        </div>
-        <div class="bottomtext">
-          <span id="botline"></span>
-        </div>
-      </footer>
+      
     </main>
+    <footer>
+      <div id="bot">
+      <div class="uptext">
+        <img src="images/footlogo.png" alt="" width="176px" height="40px" />
+        <div class="footmenu">
+          <p>Нүүр</p>
+          <p>Хоолны цэс</p>
+          <p>Хоолны цэс</p>
+        </div>
+        <div class="contact">
+          <p>Холбоо барих</p>
+          <p style="font-weight: 400;">(976) 77123456</p>
+          <p style="font-weight: 400;">(976) 77123456</p>
+        </div>
+      </div>
+      <div style="margin-top: 130px;">
+        <div class="bottonline"></div>
+        <div id="foottext">
+          <div id="social">
+            <p>Бидэнтэй нэгдээрэй</p>
+            <div id="socialicon">
+              <img src="images/Socialicon/fb.png" alt="fb">
+              <img src="images/Socialicon/instagram.png" alt="fb">
+              <img src="images/Socialicon/twitter.svg" alt="fb">
+            </div>
+          </div>  
+          <div id="lasttext">
+            <div id="terms">
+              <p>Үйлчилгээний нөхцөл</p>
+              <p>Нууцлалын бодлого</p>
+            </div>
+            <div id="copyright">
+              <p>© 2020 MStars Foods LLC </p>
+              <p>Зохиогчийн эрх хуулиар хамгаалагдсан.</p>
+            </div>
+            
+          </div>
+        </div> 
+      </div> 
+    </div>
+    </footer>
   </body>
 </html>

@@ -17,13 +17,12 @@
   display: flex;
   height: 30px;
   align-items: center;
-
-  /* justify-content: space-between; */
 }
 .elas p {
   font-family: "Poppins";
   font-size: 20px;
   font-weight: 700;
+  margin-left: 15px;
 }
 .seeall {
   display: flex;
