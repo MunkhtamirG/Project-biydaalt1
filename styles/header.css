@@ -26,23 +26,18 @@ body {
 #home {
   display: flex;
   justify-content: space-around;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
 }
 #searchbox {
   background-image: url(../images/.png);
   background-repeat: no-repeat;
   background-position: 3% 50%;
-<<<<<<< HEAD
-  border-radius: 5px;
-  border: #f17228 1px solid;
-=======
   margin-top: 12px;
   border-radius: 10px;
-  border: #FBC5A6 1px solid;
+  border: #fbc5a6 1px solid;
   width: 235px;
   height: 32px;
->>>>>>> 2b80bb4923b7eb465cf2befcf51773dff5df4b7f
 }
 input::placeholder {
   padding-left: 20px;
@@ -81,4 +76,3 @@ a {
   font-weight: 500;
   color: #f17228;
 }
-
