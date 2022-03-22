@@ -6,9 +6,15 @@
   display: flex;
   justify-content: space-evenly;
 }
+#arrow {
+  align-self: center;
+}
+#rightside {
+  justify-content: space-between;
+}
 #mealpic {
   /* width: 588px; */
-  /* height: 400px; */
+  height: 400px;
   align-content: center;
 }
 #mstarsfd {
