@@ -74,6 +74,10 @@ a {
 .menu a:hover {
   color: #f17228;
 }
+#nuur a {
+  font-weight: 700;
+  color: #f17228;
+}
 #busketlogin {
   display: flex;
   width: 180px;

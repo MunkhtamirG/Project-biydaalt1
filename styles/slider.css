@@ -1,16 +1,64 @@
 .slider {
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  .sliderr {
     height: 496px;
     background-image: url(../images/base.png);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-content:  space-between;
+    
   }
+  #sliderrr {
+    width: 180px;
+    height: 16px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+  }
+  #slider1 {
+    width: 21px;
+    height: 8px;
+    background-color: #F17228;
+    border-radius: 5px;
+    margin-left: 10px;
+  } 
+  #slider2 {
+    width: 10px;
+    height: 8px;
+    background-color: #FBC5A6;
+    border-radius: 5px;
+    margin-left: 10px;
+  } 
+  #slider3 {
+    width: 10px;
+    height: 8px;
+    background-color: #FBC5A6;
+    border-radius: 5px;
+    margin-left: 10px;
+  } 
   #arrow {
     align-self: center;
+    margin-left: 42px;
+    width: 60px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(251, 197, 166, 0.2);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #sliderr {
+    display: block;
   }
   #rightside {
-    justify-content: space-between;
+    display: flex;
   }
   #mealpic {
     /* width: 588px; */
