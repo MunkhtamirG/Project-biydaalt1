@@ -32,6 +32,8 @@ p {
   background-image: url(../images/.png);
   background-repeat: no-repeat;
   background-position: 3% 50%;
+  border-radius: 5px;
+  border: #f17228 1px solid;
 }
 input::placeholder {
   padding-left: 20px;
