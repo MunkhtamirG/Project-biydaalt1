@@ -1,0 +1,41 @@
+footer {
+  background-image: url(../images/footerbase.png);
+  height: 384px;
+  background-size: 100%;
+  align-content: space-between;
+}
+.footmenu {
+  width: 180px;
+  height: 112px;
+  margin-left: 130px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  align-content: space-between;
+}
+.footmenu p {
+  margin: 0px;
+  margin-bottom: 17px;
+}
+.contact {
+  width: 180px;
+  height: 112px;
+  margin-left: 130px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.contact p {
+  margin: 0px;
+  margin-bottom: 17px;
+}
+.uptext {
+  padding: 24px;
+  margin-left: 120px;
+  display: flex;
+}
+#botline {
+  width: 1200px;
+  height: 0px;
+  border: #ffffff 1px solid;
+}
