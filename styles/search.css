@@ -1,0 +1,11 @@
+#result {
+  display: flex;
+  width: 180px;
+  height: 40px;
+  align-items: center;
+  margin-left: 140px;
+  margin-top: 24px;
+  border: 1px solid #fbc5a6;
+  border-radius: 20px;
+  justify-content: space-around;
+}
