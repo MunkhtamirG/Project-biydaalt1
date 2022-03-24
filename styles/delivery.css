@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+#map {
+  margin: auto;
+  width: 1200px;
+  height: 616px;
+
+  box-shadow: 0px 0px 20px rgba(242, 153, 74, 0.1);
+}
+#zone {
+  width: 1200px;
+  height: 48px;
+  margin-top: 16px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+#zone p {
+  margin-left: 20px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+}
+#abzone {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  margin-top: 41px;
+  margin-bottom: 100px;
+}
+#arrow {
+  margin-top: 252px;
+}
