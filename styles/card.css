@@ -110,4 +110,5 @@
   font-weight: 400;
   text-decoration: underline;
   border-radius: 10px;
+  transition: 0.3s;
 }
