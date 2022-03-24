@@ -13,7 +13,7 @@ footer {
   font-weight: 600;
 
 }
-.footmenu p {
+.footmenu a {
   font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
@@ -22,6 +22,9 @@ line-height: 24px;
 text-decoration-line: underline;
 margin: 0px;
 margin-bottom: 14px;
+color: #ffffff;
+display: block;
+text-align: left;
 }
 .contact {
   width: 180px;
@@ -86,6 +89,14 @@ color: #ffffff;
   font-weight: 400;
   font-size: 12px;
   color: #ffffff;
+}
+#terms a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  margin-top: 12px;
 }
 #lasttext {
   display: flex;

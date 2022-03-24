@@ -57,3 +57,14 @@
     font-size: 14px;
     font-weight: 400;
   }
+  body {
+    animation: fadeInAnimation ease 1s;
+    /* animation-iteration-count: 1; */
+    animation-fill-mode: forwards;
+    
+  }
+  
+  @keyframes fadeInAnimation {
+    0% { opacity: 0.3; }
+    100% {opacity: 1;}
+  }
