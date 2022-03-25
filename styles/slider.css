@@ -19,6 +19,28 @@
   margin: auto;
 }
 #slider1 {
+  width: 10px;
+  height: 8px;
+  background-color: #fbc5a6;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: 0.4s;
+}
+#slider2:hover {
+  width: 21px;
+  height: 8px;
+  background-color: #f17228;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+#slider3:hover {
+  width: 21px;
+  height: 8px;
+  background-color: #f17228;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+#slider1:hover {
   width: 21px;
   height: 8px;
   background-color: #f17228;
@@ -31,6 +53,7 @@
   background-color: #fbc5a6;
   border-radius: 5px;
   margin-left: 10px;
+  transition: 0.4s;
 }
 #slider3 {
   width: 10px;
@@ -38,6 +61,7 @@
   background-color: #fbc5a6;
   border-radius: 5px;
   margin-left: 10px;
+  transition: 0.4s;
 }
 #arrow {
   align-self: center;
@@ -103,10 +127,13 @@ body {
   animation: fadeInAnimation ease 1s;
   /* animation-iteration-count: 1; */
   animation-fill-mode: forwards;
-  
 }
 
 @keyframes fadeInAnimation {
-  0% { opacity: 0.3; }
-  100% {opacity: 1;}
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
