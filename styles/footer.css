@@ -3,6 +3,7 @@ footer {
   height: 384px;
   background-size: 100%;
   /* align-content: space-between; */
+  margin-top: 60px;
 }
 .footmenu {
   width: 180px;
