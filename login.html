@@ -7,32 +7,27 @@
     <title>Food Delivery</title>
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/card.css" />
-    <link rel="stylesheet" href="styles/menu4.css" />
+    <link rel="stylesheet" href="styles/login.css" />
   </head>
   <body>
     <header>
       <div>
+        <!-- LOGO-->
         <div id="logo">
           <img src="images/iamage.png" alt="icon" id="homeicon" />
           <p id="name">Food Delivery</p>
         </div>
+        <!-- MENU -->
         <div class="menu">
-          <span id="nuur"
-            ><a href="index.html" style="color: black; font-weight: 500"
-              >НҮҮР</a
-            ></span
-          >
-          <span id="tses"
-            ><a href="menu.html" style="color: #f17228; font-weight: 600"
-              >ХООЛНЫ ЦЭС</a
-            ></span
-          >
+          <span id="nuur"><a href="index.html">НҮҮР</a></span>
+          <span id="tses"><a href="menu.html">ХООЛНЫ ЦЭС</a></span>
           <span id="hurgelt"><a href="delivery.html">ХҮРГЭЛТИЙН БҮС</a></span>
         </div>
+        <!-- SEARCHBAR -->
         <div class="search">
           <input type="search" placeholder="Хайх" id="searchbox" />
         </div>
+        <!-- LOGIN & BASKET -->
         <div id="busketlogin">
           <div class="lobu">
             <img
@@ -54,82 +49,36 @@
       </div>
     </header>
     <main>
-      <div id="menu">
-        <a href="menu.html" id="first" class="box">Үндсэн хоол</a>
-        <a href="menu2.html" id="second" class="box">Салад ба зууш</a>
-        <a href="menu3.html" id="third" class="box">Амттан</a>
-        <a href="menu4.html" id="forth" class="box">Хямдралтай</a>
-      </div>
-      <div id="meals">
-        <div class="card">
-          <div class="busketicon">
-            <img src="images/basket_icon.png" alt="" />
-            <p>Сагслах</p>
-          </div>
-          <div class="mealpic">
-            <div class="percent"><p>20%</p></div>
-            <img src="images/sale/unsplash_TLD6iCOlyb0.png" alt="" />
-          </div>
-          <div class="des">
-            <p class="name">Зайрмаг</p>
-            <div class="price">
-              <p>4,760₮</p>
-              <p class="oldprice">6,800₮</p>
-            </div>
-          </div>
+      <form onsubmit="login" id="nevtreh">
+        <div id="login">
+          <span></span>
+          <p>Нэвтрэх</p>
         </div>
-        <div class="card">
-          <div class="busketicon">
-            <img src="images/basket_icon.png" alt="" />
-            <p>Сагслах</p>
-          </div>
-          <div class="mealpic">
-            <div class="percent"><p>20%</p></div>
-            <img src="images/sale/unsplash_eeqbbemH9-c.png" alt="" />
-          </div>
-          <div class="des">
-            <p class="name">Панкейк</p>
-            <div class="price">
-              <p>4,760₮</p>
-              <p class="oldprice">6,800₮</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="busketicon">
-            <img src="images/basket_icon.png" alt="" />
-            <p>Сагслах</p>
-          </div>
-          <div class="mealpic">
-            <div class="percent"><p>20%</p></div>
-            <img src="images/sale/sale/unsplash_fdlZBWIP0aM.svg" alt="" />
-          </div>
-          <div class="des">
-            <p class="name">Өглөөний хоол</p>
-            <div class="price">
-              <p>4,760₮</p>
-              <p class="oldprice">6,800₮</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="busketicon">
-            <img src="images/basket_icon.png" alt="" />
-            <p>Сагслах</p>
-          </div>
-          <div class="mealpic">
-            <div class="percent"><p>20%</p></div>
-            <img src="images/sale/pic.png" alt="" />
-          </div>
-          <div class="des">
-            <p class="name">Банана сендвич</p>
-            <div class="price">
-              <p>4,760₮</p>
-              <p class="oldprice">6,800₮</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <label for="useremail">И-мэйл </label>
+        <input
+          type="email"
+          name="user_email"
+          id="useremail"
+          placeholder="И-мэйл хаягаа оруулна уу."
+        />
+        <label for="userpass">Нууц үг</label>
+        <input
+          type="password"
+          name="userpass"
+          id="userpass"
+          placeholder="Нууц үгээ оруулна уу."
+        />
+        <a href="#">Нууц үгээ мартсан?</a>
+        <input type="submit" value="Нэвтрэх" name="signin" id="signin" />
+        <p id="or">эсвэл</p>
+        <input
+          type="button"
+          value="Бүртгүүлэх"
+          name="signup"
+          id="signup"
+          onclick="window.location.href='register.html'"
+        />
+      </form>
     </main>
     <footer>
       <div id="bot">
