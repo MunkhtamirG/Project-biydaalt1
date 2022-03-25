@@ -1,26 +1,25 @@
 #top span {
-    width: 11px;
-    height: 30px;
-    background-color: #F17228;
-    margin-right: 20px;
+  width: 11px;
+  height: 30px;
+  background-color: #f17228;
+  margin-right: 20px;
 }
 #top {
-    width: 1200px;
-    margin: auto;
-    font-family: 'Poppins';
-    font-weight: 700;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
+  width: 1200px;
+  margin: auto;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 #text {
-    width: 1200px;
-    margin: auto;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: justify;
-    margin-bottom: 200px;
-
+  width: 1200px;
+  margin: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 200px;
 }

@@ -82,10 +82,16 @@
 #userpass {
   border-radius: 20px;
   border: #f17228 1px solid;
+  background-image: url(../images/hide.svg);
+  background-repeat: no-repeat;
+  background-position: 320px 14px;
 }
 #userpassagain {
   border-radius: 20px;
   border: #f17228 1px solid;
+  background-image: url(../images/hide.svg);
+  background-repeat: no-repeat;
+  background-position: 320px 14px;
 }
 #check {
   margin: auto;
