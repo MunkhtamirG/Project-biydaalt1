@@ -7,7 +7,7 @@
     <title>Food Delivery</title>
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/forget.css" />
   </head>
   <body>
     <header>
@@ -51,8 +51,8 @@
     <main>
       <form onsubmit="login" id="nevtreh">
         <div id="login">
-          <span></span>
-          <p>Нэвтрэх</p>
+          <div id="rectangle"></div>
+          <p>Нууц үг сэргээх</p>
         </div>
         <label for="useremail">И-мэйл </label>
         <input
@@ -61,23 +61,8 @@
           id="useremail"
           placeholder="И-мэйл хаягаа оруулна уу."
         />
-        <label for="userpass">Нууц үг</label>
-        <input
-          type="password"
-          name="userpass"
-          id="userpass"
-          placeholder="Нууц үгээ оруулна уу."
-        />
-        <a href="forget.html">Нууц үгээ мартсан?</a>
-        <input type="submit" value="Нэвтрэх" name="signin" id="signin" />
-        <p id="or">эсвэл</p>
-        <input
-          type="button"
-          value="Бүртгүүлэх"
-          name="signup"
-          id="signup"
-          onclick="window.location.href='register.html'"
-        />
+
+        <input type="submit" value="Үргэлжлүүлэх" name="signin" id="signin" />
       </form>
     </main>
     <footer>
