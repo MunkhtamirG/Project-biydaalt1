@@ -91,6 +91,9 @@ body {
   /* animation-iteration-count: 1; */
   animation-fill-mode: forwards;
 }
+main {
+  height: 600px;
+}
 
 @keyframes fadeInAnimation {
   0% {
