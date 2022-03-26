@@ -44,6 +44,10 @@
 #nevtreh a {
   margin: 7.5px 25px;
   align-self: flex-end;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
 }
 #signin {
   width: 359px;
