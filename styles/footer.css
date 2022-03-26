@@ -51,14 +51,14 @@ footer {
   width: 1200px;
 }
 .bottonline {
-  width: 1200px;
+  width: 100%;
   height: 0px;
   border: #ffffff 1px solid;
   margin: auto;
 }
 #foottext {
   display: flex;
-  width: 1200px;
+  width: 100%;
   justify-content: space-between;
   margin: auto;
 }

@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+.contents {
+  max-width: 1420px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+}

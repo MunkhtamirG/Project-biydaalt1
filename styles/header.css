@@ -2,30 +2,28 @@
 body {
   margin: 0px;
 }
+
 #logo {
   display: flex;
-  /* width: 180px; */
-  height: 40px;
   align-items: center;
   color: #f17228;
-  font-family: "Poppins";
+  font-family: "Poppins" sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  justify-content: flex-start;
 }
-
+#logo p {
+  padding-left: 10px;
+}
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
   background-color: #ffffff;
   box-shadow: 0px 2px 4px rgba(241, 114, 40, 0.05);
 }
-header div {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 4px;
-  width: 1200px;
-  margin: auto;
-}
+
 .lobu {
   align-items: center;
   width: 57px;
@@ -36,44 +34,45 @@ header div {
   width: 84px;
   justify-content: space-around;
 }
+
+/* Searchbox design */
+.search {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
 #searchbox {
   background-image: url(../images/.png);
   background-repeat: no-repeat;
   background-position: 3% 50%;
-  margin-top: 12px;
   border-radius: 10px;
   border: #fbc5a6 1px solid;
-  width: 235px;
+  max-width: 235px;
+  width: 100%;
   height: 32px;
+  text-indent: 20px;
 }
 
-input {
-  padding-left: 25px;
-}
 .menu {
   display: flex;
-  padding: 8px 4px;
-  /* width: 384px; */
-  height: 40px;
-  margin-top: 8px;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  min-width: 325px;
 }
-a {
+.menu a {
   text-decoration: none;
   color: black;
-  font-family: "Poppins";
+  font-family: "Poppins" san;
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  line-height: 24px;
 }
 .menu a:hover {
   color: #f17228;
-}
-#nuur a {
   font-weight: 700;
-  color: #f17228;
 }
+
 #busketlogin {
   display: flex;
   width: 180px;
@@ -88,6 +87,6 @@ a {
   font-weight: 500;
   color: #f17228;
 }
-.search {
-  margin: 0px;
+
+@media screen and (max-width: 600px) {
 }

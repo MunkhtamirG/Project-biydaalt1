@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 #features {
   height: 248px;
   background: linear-gradient(
@@ -12,7 +12,8 @@
 
 #inner {
   height: 152px;
-  width: 1200px;
+  min-width: 1000px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -24,22 +25,22 @@
   margin: auto;
 }
 #new {
-  width: 20vw;
-  height: 64px;
+  /* width: 20vw; */
+  /* height: 64px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #healthy {
-  width: 20vw;
-  height: 64px;
+  /* width: 20vw; */
+  /* height: 64px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #fast {
-  width: 20vw;
-  height: 64px;
+  /* width: 20vw; */
+  /* height: 64px; */
   display: flex;
   justify-content: center;
   align-items: center;

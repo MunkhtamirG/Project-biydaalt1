@@ -1,0 +1,33 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.slider a {
+  position: absolute;
+  top: 280px;
+  right: 5%;
+}
+a {
+  text-decoration: none;
+}
+/* .slider div:first-child {
+  margin-right: 30%;
+} */
+
+.titleText {
+  font-family: "Comfortaa", cursive;
+}
+.titleText p:first-child {
+  font-family: "Poppins", sans-serif;
+  font-size: 55px;
+  font-weight: 600;
+  color: #f17228;
+  border-bottom: #f17228 2px solid;
+}
+.sliderBG {
+  background-image: url(../images/base.png);
+  background-repeat: no-repeat;
+  background-size: 135%;
+}
