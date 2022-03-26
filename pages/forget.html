@@ -5,37 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Delivery</title>
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/delivery.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/forget.css" />
   </head>
   <body>
     <header>
       <div>
+        <!-- LOGO-->
         <div id="logo">
-          <img src="images/iamage.png" alt="icon" id="homeicon" />
+          <img src="../images/iamage.png" alt="icon" id="homeicon" />
           <p id="name">Food Delivery</p>
         </div>
+        <!-- MENU -->
         <div class="menu">
-          <span id="nuur"
-            ><a href="index.html" style="color: black; font-weight: 500"
-              >НҮҮР</a
-            ></span
-          >
+          <span id="nuur"><a href="../index.html">НҮҮР</a></span>
           <span id="tses"><a href="menu.html">ХООЛНЫ ЦЭС</a></span>
-          <span id="hurgelt"
-            ><a href="delivery.html" style="color: #f17228; font-weight: 600"
-              >ХҮРГЭЛТИЙН БҮС</a
-            ></span
-          >
+          <span id="hurgelt"><a href="delivery.html">ХҮРГЭЛТИЙН БҮС</a></span>
         </div>
+        <!-- SEARCHBAR -->
         <div class="search">
           <input type="search" placeholder="Хайх" id="searchbox" />
         </div>
+        <!-- LOGIN & BASKET -->
         <div id="busketlogin">
           <div class="lobu">
             <img
-              src="images/busket icon.png"
+              src="../images/busket icon.png"
               alt="busketicon"
               style="width: 16px; height: 14px"
             />
@@ -43,7 +39,7 @@
           </div>
           <div class="bulo">
             <img
-              src="images/user icon.png"
+              src="../images/user icon.png"
               alt="loginicon"
               style="width: 16px; height: 14px"
             />
@@ -53,43 +49,33 @@
       </div>
     </header>
     <main>
-      <div id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.131353545351!2d106.93290349953394!3d47.92380916905502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d969215ec9fae43%3A0xe66f36ef49c09486!2sSeoul%20Business%20Center%2C%20Ulaanbaatar!5e0!3m2!1sen!2smn!4v1648202928117!5m2!1sen!2smn" width="1200" height="616" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div id="zone">
-        <img
-          src="images/orange highlight.png"
-          width="11px"
-          height="30px"
-          alt=""
+      <form onsubmit="login" id="nevtreh">
+        <div id="login">
+          <div id="rectangle"></div>
+          <p>Нууц үг сэргээх</p>
+        </div>
+        <label for="useremail">И-мэйл </label>
+        <input
+          type="email"
+          name="user_email"
+          id="useremail"
+          placeholder="И-мэйл хаягаа оруулна уу."
         />
-        <p>Хүргэлтийн бүс дэх хаягууд</p>
-      </div>
-      <div id="abzone">
-        <img
-          src="images/a zone.png"
-          style="
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-          "
-          alt=""
-        />
-        <img
-          src="images/b zone.png"
-          style="
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-          "
-          alt=""
-        />
-      </div>
+
+        <input type="submit" value="Үргэлжлүүлэх" name="signin" id="signin" />
+      </form>
     </main>
     <footer>
       <div id="bot">
         <div class="uptext">
-          <img src="images/footlogo.png" alt="" width="176px" height="40px" />
+          <img
+            src="../images/footlogo.png"
+            alt=""
+            width="176px"
+            height="40px"
+          />
           <div class="footmenu">
-            <a href="index.html">Нүүр</a>
+            <a href="../index.html">Нүүр</a>
             <a href="menu.html">Хоолны цэс</a>
             <a href="delivery.html">Хүргэлтийн бүс</a>
           </div>
@@ -106,13 +92,13 @@
               <p>Бидэнтэй нэгдээрэй</p>
               <div id="socialicon">
                 <a href="https://www.facebook.com/" target="blank">
-                  <img src="images/Socialicon/fb.png" alt="fb"
+                  <img src="../images/Socialicon/fb.png" alt="fb"
                 /></a>
                 <a href="https://www.instagram.com/" target="blank"
-                  ><img src="images/Socialicon/instagram.png" alt="fb"
+                  ><img src="../images/Socialicon/instagram.png" alt="fb"
                 /></a>
                 <a href="https://twitter.com/" target="blank"
-                  ><img src="images/Socialicon/twitter.svg" alt="fb"
+                  ><img src="../images/Socialicon/twitter.svg" alt="fb"
                 /></a>
               </div>
             </div>
