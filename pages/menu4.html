@@ -4,52 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Delivery</title>
+    <title>Food delivery</title>
+    <link rel="stylesheet" href="../styles/card.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/card.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/features.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/menu4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <div>
-        <div id="logo">
-          <img src="../images/iamage.png" alt="icon" id="homeicon" />
-          <p id="name">Food Delivery</p>
+    <header class="contents">
+      <!-- LOGO-->
+      <div id="logo">
+        <img src="../images/iamage.png" alt="icon" id="homeicon" />
+        <p id="name">Food Delivery</p>
+      </div>
+      <!-- MENU -->
+      <div class="menu">
+        <a href="../index.html">НҮҮР</a>
+        <a href="menu.html">ХООЛНЫ ЦЭС</a>
+        <a href="delivery.html">ХҮРГЭЛТИЙН БҮС</a>
+      </div>
+      <!-- SEARCHBAR -->
+      <div class="search">
+        <input type="search" placeholder="Хайх" id="searchbox" />
+      </div>
+      <!-- LOGIN & BASKET -->
+      <div id="busketlogin">
+        <div class="lobu">
+          <img
+            src="../images/busket icon.png"
+            alt="busketicon"
+            style="width: 16px; height: 14px"
+          />
+          <a class="loginbusket" href="#">Сагс</a>
         </div>
-        <div class="menu">
-          <span id="nuur"
-            ><a href="../index.html" style="color: black; font-weight: 500"
-              >НҮҮР</a
-            ></span
-          >
-          <span id="tses"
-            ><a href="menu.html" style="color: #f17228; font-weight: 600"
-              >ХООЛНЫ ЦЭС</a
-            ></span
-          >
-          <span id="hurgelt"><a href="delivery.html">ХҮРГЭЛТИЙН БҮС</a></span>
-        </div>
-        <div class="search">
-          <input type="search" placeholder="Хайх" id="searchbox" />
-        </div>
-        <div id="busketlogin">
-          <div class="lobu">
-            <img
-              src="../images/busket icon.png"
-              alt="busketicon"
-              style="width: 16px; height: 14px"
-            />
-            <a class="loginbusket" href="#">Сагс</a>
-          </div>
-          <div class="bulo">
-            <img
-              src="../images/user icon.png"
-              alt="loginicon"
-              style="width: 16px; height: 14px"
-            />
-            <a class="loginbusket" href="login.html">Нэвтрэх</a>
-          </div>
+        <div class="bulo">
+          <img
+            src="../images/user icon.png"
+            alt="loginicon"
+            style="width: 16px; height: 14px"
+          />
+          <a class="loginbusket" href="login.html">Нэвтрэх</a>
         </div>
       </div>
     </header>
@@ -132,7 +135,7 @@
       </div>
     </main>
     <footer>
-      <div id="bot">
+      <div id="bot" class="contents">
         <div class="uptext">
           <img
             src="../images/footlogo.png"
