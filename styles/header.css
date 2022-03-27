@@ -89,7 +89,8 @@ input {
   color: #f17228;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 1024px) {
+  
 }
 a {
   text-decoration: none;
