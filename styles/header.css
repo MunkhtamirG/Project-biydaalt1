@@ -88,11 +88,62 @@ input {
   font-weight: 500;
   color: #f17228;
 }
-
-@media (max-width: 1024px) {
-  
-}
 a {
   text-decoration: none;
   color: black;
+}
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #homeicon {
+    width: 30px;
+    height: 30px;
+    
+  }
+  #logo {
+    display: flex;
+    width: 160px;
+  }
+#name
+  {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    min-width: 127px;
+  }
+  #name p {
+    margin: 0px;
+  }
+  #menu {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+}
+.search {
+  opacity: 0;
+  display: none;
+}
+#searchbox {
+  opacity: 0;
+}
+.lobu {
+  width: 18px;
+  height: 18px;
+}
+.loginbusket {
+  opacity: 0;
+}
+#icons {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 15%;
+}
+
 }

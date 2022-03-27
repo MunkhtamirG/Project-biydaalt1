@@ -73,3 +73,41 @@ body {
     opacity: 1;
   }
 }
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  #features {
+    height: 140px;
+    width: 100%;
+    background: linear-gradient(179.24deg, #F17228 -90.18%, rgba(255, 255, 255, 0) 41.19%);
+  }
+  #inner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 768px;
+    border-radius: 0px;
+    box-shadow: none;
+
+  }
+  
+  .boxes {
+    width: 215px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .feIcon {
+    width: 40px;
+    height: 40px;
+  }
+  .bold {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+  }
+  .thin {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+  }
+}

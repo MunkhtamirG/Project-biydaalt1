@@ -137,3 +137,31 @@ body {
     opacity: 1;
   }
 }
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  #sliderBG {
+    min-width: 834px;
+  }
+  #food2
+  {
+    width: 334.2px;
+  }
+  .titleText {
+    font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+width: 250.48px;
+text-align: right;
+  }
+  .titleText p:first-child {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+padding-bottom: 10px;
+margin: 0px;
+  }
+  #rightarrow {
+    display: none;
+  }
+}
