@@ -114,7 +114,7 @@ body {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #features {
     background-image: url(../images/base.feature.svg);
     height: 240px;
