@@ -5,7 +5,7 @@ body {
 #icons {
   display: flex;
   align-items: center;
-  width: 30%;
+  width: 40%;
   justify-content: space-around;
 }
 #searchicon {
@@ -34,12 +34,18 @@ header {
 
 .lobu {
   align-items: center;
-  width: 57px;
-  justify-content: space-around;
+  width: 70px;
+  justify-content: flex-end;
   display: flex;
-  width: 25%;
 }
-
+.lobu a {
+  display: flex;
+  color: #f17228;
+  align-items: center;
+}
+.noci {
+  margin-right: 5px;
+}
 /* Searchbox design */
 .search {
   width: 70%;
@@ -129,19 +135,18 @@ a {
     font-size: 14px;
   }
   .search {
-    opacity: 0;
     display: none;
   }
-  #searchbox {
-    opacity: 0;
-  }
+
   .lobu {
     width: 18px;
     height: 18px;
+    /* display: none; */
   }
   .loginbusket {
     display: none;
   }
+
   #icons {
     display: flex;
     align-items: baseline;
@@ -149,6 +154,9 @@ a {
     width: 18%;
   }
   #searchicon {
+    display: block;
+  }
+  .noci {
     display: block;
   }
 }

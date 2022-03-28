@@ -51,3 +51,12 @@ body {
 #arrow {
   margin-top: 252px;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #abzone {
+    display: block;
+    margin-left: 67px;
+  }
+  #zone {
+    margin-left: 67px;
+  }
+}
