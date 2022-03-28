@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   /* align-items: flex-end; */
-  height: 448px;
+  /* height: 448px; */
   justify-content: space-around;
   align-items: center;
 }
@@ -113,15 +113,69 @@
   border-radius: 10px;
   transition: 0.3s;
 }
-@media screen and (min-width:768px) and (max-width: 1024px) {
+.seealliacon {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .contents {
     width: 100%;
   }
-  .elas
-  {
-    font-family: 'Poppins';
+  .elas {
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+  }
+  .saletitle {
+    max-width: 656px;
+  }
+  .seeall {
+    display: none;
+  }
+  .seealliacon {
+    width: 15px;
+    height: 30px;
+    display: block;
+    transform: rotate(180deg);
+  }
+  .card {
+    width: 160px;
+    height: 200px;
+  }
+  .busketicon {
+    width: 140px;
+  }
+  .pics {
+    width: 130px;
+  }
+  .percent {
+    margin-left: 84px;
+    width: 46px;
+    height: 26px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .percent p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .name {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .price {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .salemeals {
+    height: 230px;
+    padding: 10px 37px 10px 37px;
   }
 }

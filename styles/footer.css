@@ -102,3 +102,19 @@ footer {
   width: 600px;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    width: 100%;
+  }
+  #footlogo {
+    width: 160px;
+    height: 35px;
+  }
+  .footmenu {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 110px;
+  }
+}
