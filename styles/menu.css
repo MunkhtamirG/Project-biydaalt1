@@ -54,3 +54,15 @@ body {
     opacity: 1;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contents {
+    width: 100%;
+    margin: 0px;
+    justify-content: space-around;
+  }
+  .box {
+    margin: 0px;
+    width: 160px;
+    height: 40px;
+  }
+}

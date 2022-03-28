@@ -105,16 +105,29 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   footer {
     width: 100%;
+    height: 384px;
   }
   #footlogo {
     width: 160px;
     height: 35px;
   }
   .footmenu {
+    margin-left: 110px;
+    width: 180px;
+  }
+  .footmenu a {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    margin-left: 110px;
+  }
+  .uptext {
+    width: 100%;
+  }
+  .contact p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
   }
 }

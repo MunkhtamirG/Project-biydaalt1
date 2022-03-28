@@ -54,3 +54,6 @@ body {
     opacity: 1;
   }
 }
+main {
+  height: calc(100vh - 404px - 60px);
+}
