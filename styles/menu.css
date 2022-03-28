@@ -66,3 +66,18 @@ body {
     height: 40px;
   }
 }
+@media screen and (max-width: 767px) {
+  #forth {
+    display: none;
+  }
+  .box {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+width: 100px;
+height: 40px;
+margin: 0px;
+  }
+  
+}
