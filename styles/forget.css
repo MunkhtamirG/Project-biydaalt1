@@ -123,3 +123,41 @@ body {
 main {
   height: 600px;
 }
+@media screen and (max-width: 767px) {
+  #login p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+color: #f17228;
+  }
+  #login {
+    width: 5px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 20px;
+  }
+  #nevtreh label {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+margin-left: 40px;
+
+  }
+  #nevtreh input {
+    width: 90vw;
+    margin: auto;
+    border-radius: 5px;
+  }
+  
+  #login p {
+    margin-top: 20px;
+  }
+  footer {
+    display: none;
+  }
+  #nevtreh {
+    height: 50vh;
+  }
+}
