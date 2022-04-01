@@ -7,10 +7,22 @@
   padding-right: 10px;
   margin: auto;
 }
-@media screen and (min-width:768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .contents {
     max-width: 1024px;
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+.fPoppins {
+  font-family: "Poppins" !important;
+}
+.modalnum {
+  background-color: #fff1e9;
+}
+.orts {
+  background-color: #f7f8f7;
+}
+.bgofbutton {
+  background-color: #f17228 !important;
 }
