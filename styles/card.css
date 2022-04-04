@@ -67,8 +67,7 @@
   margin: 5px 0px 0px 10px;
 }
 .card {
-  border-radius: 20px;
-  /* padding: 15px; */
+  border-radius: 8px !important;
   background: #fefefe;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
@@ -79,7 +78,7 @@
   border-radius: 0px 8px 0px 20px;
   position: absolute;
   text-align: center;
-  margin-left: 177px;
+  right: 0;
   font-family: "Poppins";
   font-size: 18px;
   font-weight: 600;
@@ -88,15 +87,19 @@
 .percent p {
   display: flex;
   justify-content: center;
-  /* margin: auto; */
-  margin-top: 10px;
+  align-items: center;
 }
 .card:hover {
   opacity: 1;
+  z-index: 3;
+  
 }
-.card .busketicon:hover {
+.busketicon:hover {
   opacity: 1;
+  z-index: 4;
+  
 }
+
 #modal {
   width: 60vw;
   background: #fefefe;

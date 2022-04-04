@@ -29,11 +29,9 @@
     ></script>
   </head>
   <body>
-    <header class="contents">
+    <header class="contents d-flex justify-content-between">
       <!-- LOGO-->
-      <a href="pages/moremenu.html"
-        ><img src="images/Tablet/more.svg" alt="" id="moreicon"
-      /></a>
+      
       <a class="text-decoration-none align-baseline" href="index.html"
         ><div id="logo">
           <img src="images/iamage.png" alt="icon" id="homeicon" />
@@ -42,13 +40,13 @@
       >
       <!-- MENU -->
       <div class="menu">
-        <a href="index.html">НҮҮР</a>
-        <a href="pages/menu.html">ХООЛНЫ ЦЭС</a>
-        <a href="pages/delivery.html">ХҮРГЭЛТИЙН БҮС</a>
+        <a href="index.html" class="fPoppins">НҮҮР</a>
+        <a href="pages/menu.html" class="fPoppins">ХООЛНЫ ЦЭС</a>
+        <a href="pages/delivery.html" class="fPoppins">ХҮРГЭЛТИЙН БҮС</a>
       </div>
       <div id="icons" class="d-flex justify-content-around">
         <!-- SEARCHBAR -->
-        <div class="search col-9">
+        <div class="search">
           <input type="search" placeholder="Хайх" id="searchbox" />
         </div>
         <!-- LOGIN & BASKET -->
@@ -59,7 +57,7 @@
             class="noci"
             id="searchicon"
           />
-
+          <div class="d-flex">
           <button
             class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
             type="button"
@@ -123,14 +121,18 @@
               </div>
             </div>
           </div>
-          <div class="lobu">
-            <a href="pages/login.html"
-              ><img src="images/Tablet/user.svg" alt="loginicon" class="noci"
-            /></a>
-            <span class="loginbusket"
-              ><a href="pages/login.html"> Нэвтрэх </a></span
-            >
-          </div>
+          <button
+            class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
+            type="button">
+            <img src="images/Tablet/user.svg" alt="" class="me-1" />
+            Нэвтрэх
+          </button>
+          <button
+            class="btn align-items-center d-flex d-lg-none justify-content-around fPoppins busketText"
+            type="button">
+            <img src="images/Tablet/user.svg" alt="" class="me-1" />
+          </button>
+        </div>
         </div>
       </div>
     </header>
@@ -276,11 +278,11 @@
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
-              <div class="percent"><p>20%</p></div>
+              <div class="percent m-lg-2 mx-md-3 mx-2"><p>20%</p></div>
               <img
                 src="images/sale/unsplash_TLD6iCOlyb0.png"
                 alt=""
-                class="pics text-center"
+                class="pics text-center m-lg-2"
               />
             </div>
             <div class="des">
@@ -302,11 +304,11 @@
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
-              <div class="percent"><p>20%</p></div>
+              <div class="percent m-lg-2 mx-md-3 mx-2"><p>20%</p></div>
               <img
                 src="images/sale/unsplash_eeqbbemH9-c.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -328,11 +330,11 @@
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
-              <div class="percent"><p>20%</p></div>
+              <div class="percent m-lg-2 mx-md-3 mx-2"><p>20%</p></div>
               <img
                 src="images/sale/sale/unsplash_fdlZBWIP0aM.svg"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -353,9 +355,10 @@
               <img src="images/basket_icon.png" alt="" />
               <p class="text-light">Сагслах</p>
             </div>
+         
             <div class="mealpic m-auto">
-              <div class="percent"><p>20%</p></div>
-              <img src="images/sale/pic.png" alt="" class="pics" />
+              <div class="percent m-lg-2 mx-md-3 mx-2"><p>20%</p></div>
+              <img src="images/sale/pic.png" alt="" class="pics m-lg-2" />
             </div>
             <div class="des">
               <p class="name ms-3">Банана сендвич</p>
@@ -364,9 +367,11 @@
                 <p class="oldprice">6,800₮</p>
               </div>
             </div>
+          
           </div>
         </div>
       </div>
+      
       <div class="sale contents">
         <div class="saletitle">
           <div class="elas">
@@ -400,7 +405,7 @@
               <img
                 src="images/main/unsplash_awj7sRviVXo.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -425,7 +430,7 @@
               <img
                 src="images/main/unsplash_oaz0raysASk.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -449,7 +454,7 @@
               <img
                 src="images/main/unsplash_pLKgCsBOiw4.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -473,7 +478,7 @@
               <img
                 src="images/main/unsplash_OFismyezPnY.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -519,7 +524,7 @@
               <img
                 src="images/salad/unsplash_IGfIGP5ONV0.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -543,7 +548,7 @@
               <img
                 src="images/salad/unsplash_SqYmTDQYMjo.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -567,7 +572,7 @@
               <img
                 src="images/salad/unsplash_Ul4sgxQMmHU.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -591,7 +596,7 @@
               <img
                 src="images/salad/unsplash_yhc4pSbl01A.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -636,7 +641,7 @@
               <img
                 src="images/desert/unsplash_q54Oxq44MZs.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -660,7 +665,7 @@
               <img
                 src="images/desert/unsplash_cLpdEA23Z44.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -684,7 +689,7 @@
               <img
                 src="images/desert/unsplash_jABXuTS1azc.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
@@ -708,7 +713,7 @@
               <img
                 src="images/desert/unsplash_WbZesfqwR-A.png"
                 alt=""
-                class="pics"
+                class="pics m-lg-2"
               />
             </div>
             <div class="des">
