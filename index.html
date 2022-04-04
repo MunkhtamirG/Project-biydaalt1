@@ -60,15 +60,68 @@
             id="searchicon"
           />
 
-          <div class="lobu text-center me-2">
-            <a href="pages/order.html"
-              ><img
-                src="images/Tablet/busket.svg"
-                alt="busketicon"
-                id="busketicon"
-                class="noci"
-            /></a>
-            <span class="loginbusket"><a href="#">Сагс</a></span>
+          <button
+            class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img src="images/Tablet/busket.svg" alt="" class="me-1" />
+            Сагс
+          </button>
+          <button
+            class="btn align-items-center d-none d-md-flex d-lg-none justify-content-around fPoppins busketText"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img src="images/Tablet/busket.svg" alt="" class="me-1" />
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+              <h5
+                id="offcanvasRightLabel"
+                class="text-center col-12 canHeadText"
+              >
+                Таны сагс
+              </h5>
+            </div>
+            <div class="offcanvas-body">
+              <div class="d-flex">
+                <div class="col-4">
+                  <img
+                    src="images/desert/unsplash_cLpdEA23Z44.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </div>
+                <div class="fPoppins mx-2 col-8">
+                  <div class="d-flex d-flex justify-content-between">
+                    <p class="m-0">Хулууны зутан</p>
+                    <img
+                      src="images/Tablet/cancel2.svg"
+                      alt=""
+                      style="width: 15px"
+                    />
+                  </div>
+                  <p class="price fPoppins">6,800₮</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="lobu">
             <a href="pages/login.html"
