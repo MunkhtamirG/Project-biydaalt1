@@ -450,7 +450,7 @@ body {
 }
 #login p {
   margin: 0px;
-  margin-left: 19px;
+  margin-left: 25px;
   color: #f17228;
   font-family: "Poppins";
   font-style: normal;
@@ -459,34 +459,36 @@ body {
   text-transform: uppercase;
 }
 #nevtreh {
-  height: 440px;
-  margin: auto;
+  /* height: 440px; */
+  /* margin: auto; */
   font-family: "Poppins";
   font-weight: 700;
   font-size: 18px;
   display: flex;
-  align-items: flex-start;
-  display: flex;
+  justify-content: start;
   flex-direction: column;
   margin-bottom: 88px;
   margin-top: 48px;
+  padding: 20px;
 }
 #nevtreh label {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 250;
   font-size: 14px;
-  margin: 12px 0px;
 }
 #nevtreh input {
-  width: 359px;
+  width: 90%;
   height: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   box-sizing: border-box;
-  align-items: center;
 }
+
 #nevtreh a {
   margin: 7.5px 25px;
-  align-self: flex-end;
+  display: flex;
+  justify-content: end;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -511,16 +513,18 @@ body {
   color: #828282;
   line-height: 140%;
   margin: 15.5px 25px 15.5px 0px;
-  align-self: center;
+  justify-content: center;
+  display: flex;
 }
 #signup {
-  width: 359px;
-  height: 48px;
+  width: 90%;
+  height: 40px;
   background-color: #ffffff;
   color: #f17228;
   border-radius: 20px;
   text-transform: uppercase;
   border: #f17228 1px solid;
+  align-self: center;
 }
 #useremail {
   border-radius: 20px;
