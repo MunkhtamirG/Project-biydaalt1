@@ -205,7 +205,15 @@ body {
 #offcanvasRight {
   height: 75vh !important;
 }
+#staticBackdrop {
+  
+  width: 80%;
+}
 @media screen and (max-width: 1024px) {
+  #staticBackdrop {
+  
+    width: 100%;
+  }
   #features {
     height: 140px;
     width: 100%;
@@ -297,6 +305,14 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  #staticBackdrop {
+  
+    width: 100%;
+  }
+  #modal {
+    width: 100%;
+    
+  }
   #features {
     background-image: url(../images/base.feature.svg);
     height: 240px;
