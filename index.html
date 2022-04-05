@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,9 +30,120 @@
     ></script>
   </head>
   <body>
-    <header class="contents d-flex justify-content-between">
+    <header class="contents d-flex justify-content-between container">
       <!-- LOGO-->
-      
+      <button
+        class="btn d-block d-md-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop"
+      >
+        <img src="images/Tablet/more.svg" alt="" />
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 id="offcanvasTopLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <div class="userinfo">
+              <a href="../pages/menu.html">
+                <div class="more">
+                  <div>
+                    <div class="icon">
+                      <img
+                        src="../images/Tablet/spoon.svg"
+                        alt=""
+                        class="inicon"
+                      />
+                    </div>
+                    <p>Хоолны цэс</p>
+                  </div>
+                  <img
+                    src="../images/Tablet/arrow.svg"
+                    alt=""
+                    class="arrow"
+                    style="margin: none"
+                  /></div
+              ></a>
+              <span></span>
+              <a href="../pages/delivery.html">
+                <div class="more">
+                  <div>
+                    <div class="icon">
+                      <img
+                        src="../images/Tablet/mapicon.svg"
+                        alt=""
+                        class="inicon"
+                      />
+                    </div>
+                    <p>Хүргэлтийн бүс</p>
+                  </div>
+                  <img
+                    src="../images/Tablet/arrow.svg"
+                    alt=""
+                    class="arrow"
+                    style="margin: none"
+                  /></div
+              ></a>
+            </div>
+            <div class="userinfo">
+              <a href="#">
+                <div class="more">
+                  <div>
+                    <div class="icon">
+                      <img
+                        src="../images/Tablet/user.svg"
+                        alt=""
+                        class="inicon"
+                      />
+                    </div>
+                    <p>Хэрэглэгчийн мэдээлэл</p>
+                  </div>
+                  <img
+                    src="../images/Tablet/arrow.svg"
+                    alt=""
+                    class="arrow"
+                    style="margin: none"
+                  /></div
+              ></a>
+              <span></span>
+              <a href="order.html">
+                <div class="more">
+                  <div>
+                    <div class="icon">
+                      <img
+                        src="../images/Tablet/busket.svg"
+                        alt=""
+                        class="inicon"
+                      />
+                    </div>
+                    <p>Миний захиалга</p>
+                  </div>
+                  <img
+                    src="../images/Tablet/arrow.svg"
+                    alt=""
+                    class="arrow"
+                    style="margin: none"
+                  /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
       <a class="text-decoration-none align-baseline" href="index.html"
         ><div id="logo">
           <img src="images/iamage.png" alt="icon" id="homeicon" />
@@ -51,88 +163,129 @@
         </div>
         <!-- LOGIN & BASKET -->
         <div class="d-flex w-25 justify-content-around w-100">
-          <img
-            src="images/Tablet/search icon.svg"
-            alt=""
-            class="noci"
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             id="searchicon"
-          />
-          <div class="d-flex">
-          <button
-            class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
           >
-            <img src="images/Tablet/busket.svg" alt="" class="me-1" />
-            Сагс
-          </button>
-          <button
-            class="btn align-items-center d-none d-md-flex d-lg-none justify-content-around fPoppins busketText"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <img src="images/Tablet/busket.svg" alt="" class="me-1" />
+            <img src="images/Tablet/search icon.svg" alt="" />
           </button>
 
+          <!-- Modal -->
           <div
-            class="offcanvas offcanvas-end"
+            class="modal fade"
+            id="exampleModal"
             tabindex="-1"
-            id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
           >
-            <div class="offcanvas-header">
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-              <h5
-                id="offcanvasRightLabel"
-                class="text-center col-12 canHeadText"
-              >
-                Таны сагс
-              </h5>
-            </div>
-            <div class="offcanvas-body">
-              <div class="d-flex">
-                <div class="col-4">
-                  <img
-                    src="images/desert/unsplash_cLpdEA23Z44.png"
-                    alt=""
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body p-0 modalout">
+                  <input
+                    type="search"
+                    placeholder="Хайх"
+                    id="searchbox"
                     class="w-100"
                   />
-                </div>
-                <div class="fPoppins mx-2 col-8">
-                  <div class="d-flex d-flex justify-content-between">
-                    <p class="m-0">Хулууны зутан</p>
-                    <img
-                      src="images/Tablet/cancel2.svg"
-                      alt=""
-                      style="width: 15px"
-                    />
-                  </div>
-                  <p class="price fPoppins">6,800₮</p>
                 </div>
               </div>
             </div>
           </div>
-          <button
-            class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
-            type="button">
-            <img src="images/Tablet/user.svg" alt="" class="me-1" />
-            Нэвтрэх
-          </button>
-          <button
-            class="btn align-items-center d-flex d-lg-none justify-content-around fPoppins busketText"
-            type="button">
-            <img src="images/Tablet/user.svg" alt="" class="me-1" />
-          </button>
-        </div>
+          <div class="d-flex">
+            <button
+              class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <img src="images/Tablet/busket.svg" alt="" class="me-1" />
+              Сагс
+            </button>
+            <button
+              class="btn align-items-center d-none d-md-flex d-lg-none justify-content-around fPoppins busketText"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <img src="images/Tablet/busket.svg" alt="" class="me-1" />
+            </button>
+
+            <div
+              class="offcanvas offcanvas-end h-75"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+                <h5
+                  id="offcanvasRightLabel"
+                  class="text-center col-12 canHeadText"
+                >
+                  Таны сагс
+                </h5>
+              </div>
+              <div
+                class="offcanvas-body d-flex flex-column justify-content-between"
+              >
+                <div>
+                  <div class="d-flex">
+                    <div class="col-4">
+                      <img
+                        src="images/desert/unsplash_cLpdEA23Z44.png"
+                        alt=""
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="fPoppins mx-2 col-8">
+                      <div class="d-flex d-flex justify-content-between">
+                        <p class="m-0">Хулууны зутан</p>
+                        <img
+                          src="images/Tablet/cancel2.svg"
+                          alt=""
+                          style="width: 15px"
+                        />
+                      </div>
+                      <p class="price fPoppins">6,800₮</p>
+                      <div class="d-flex align-items-center">
+                        <p class="smallbox text-center rounded">-</p>
+                        <p class="smboxinn text-center rounded">1</p>
+                        <p class="smallbox text-center rounded">+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4 orange"></div>
+                </div>
+                <div class="text-end fPoppins">
+                  <p class="fs-5">Нийт: 6,800₮</p>
+                  <button class="btn fs-5 canvasbox">Захиалах</button>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
+              type="button"
+            >
+              <img src="images/Tablet/user.svg" alt="" class="me-1" />
+              Нэвтрэх
+            </button>
+            <button
+              class="btn align-items-center d-flex d-lg-none justify-content-around fPoppins busketText"
+              type="button"
+            >
+              <img src="images/Tablet/user.svg" alt="" class="me-1" />
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -229,7 +382,7 @@
       </div>
 
       <div id="features">
-        <div id="inner" class="contents">
+        <div id="inner" class="contents container">
           <div id="fast" class="boxes">
             <img src="images/delivery3.png" alt="fast" class="feIcon" />
             <div>
@@ -254,7 +407,7 @@
         </div>
       </div>
       <div class="sale contents">
-        <div class="saletitle">
+        <div class="saletitle container">
           <div class="elas">
             <img src="images/Rectangle 2696.png" alt="Rectangle" />
             <p class="m-0 ms-2"> Хямдралтай</p>
@@ -355,7 +508,7 @@
               <img src="images/basket_icon.png" alt="" />
               <p class="text-light">Сагслах</p>
             </div>
-         
+
             <div class="mealpic m-auto">
               <div class="percent m-lg-2 mx-md-3 mx-2"><p>20%</p></div>
               <img src="images/sale/pic.png" alt="" class="pics m-lg-2" />
@@ -367,13 +520,12 @@
                 <p class="oldprice">6,800₮</p>
               </div>
             </div>
-          
           </div>
         </div>
       </div>
-      
+
       <div class="sale contents">
-        <div class="saletitle">
+        <div class="saletitle container">
           <div class="elas">
             <img src="images/Rectangle 2696.png" alt="Rectangle" />
             <p class="m-0 ms-2">Үндсэн хоол</p>
@@ -491,7 +643,7 @@
         </div>
       </div>
       <div class="sale contents">
-        <div class="saletitle">
+        <div class="saletitle container">
           <div class="elas">
             <img src="images/Rectangle 2696.png" alt="Rectangle" />
             <p class="m-0 ms-2">Салад ба зууш</p>
@@ -609,7 +761,7 @@
         </div>
       </div>
       <div class="sale mb-4 contents">
-        <div class="saletitle">
+        <div class="saletitle container">
           <div class="elas">
             <img src="images/Rectangle 2696.png" alt="Rectangle" />
             <p class="m-0 ms-2">Амттан</p>

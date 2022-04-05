@@ -92,16 +92,14 @@
 .card:hover {
   opacity: 1;
   z-index: 3;
-  
 }
 .busketicon:hover {
   opacity: 1;
   z-index: 4;
-  
 }
 
 #modal {
-  width: 60vw;
+  width: 50vw;
   background: #fefefe;
 }
 .busketicon {
@@ -250,4 +248,44 @@
     font-weight: 600;
     font-size: 12px;
   }
+}
+.smallbox {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background-color: #f17228;
+  color: #ffffff;
+}
+.smboxinn {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  background-color: #fff1e9;
+  color: #f17228;
+}
+.orange {
+  border: #f17228 1px solid;
+}
+.canvasbox {
+  width: 90%;
+  padding: 10px;
+  background-color: #f17228 !important;
+  color: #ffffff !important;
+}
+.drop {
+  cursor: pointer;
+  display: block;
+}
+
+.drop + input {
+  display: none;
+}
+
+.drop + input + div {
+  display: none;
+}
+
+.drop + input:checked + div {
+  display: block;
+  transition: 3s;
 }
