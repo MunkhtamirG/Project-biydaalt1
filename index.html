@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +29,7 @@
   </head>
   <body>
     <header class="contents d-flex justify-content-between container">
-      <!-- LOGO-->
+      <!-- More Menu-->
       <button
         class="btn d-block d-md-none"
         type="button"
@@ -40,7 +39,7 @@
       >
         <img src="images/Tablet/more.svg" alt="" />
       </button>
-
+      <!-- More Menu OffCanvas -->
       <div
         class="offcanvas offcanvas-start"
         tabindex="-1"
@@ -143,6 +142,7 @@
           </div>
         </div>
       </div>
+      <!-- Logo -->
       <a class="text-decoration-none align-baseline" href="index.html"
         ><div id="logo">
           <img src="images/iamage.png" alt="icon" id="homeicon" />
@@ -155,13 +155,15 @@
         <a href="pages/menu.html" class="fPoppins">ХООЛНЫ ЦЭС</a>
         <a href="pages/delivery.html" class="fPoppins">ХҮРГЭЛТИЙН БҮС</a>
       </div>
+      <!-- Right Side -->
       <div id="icons" class="d-flex justify-content-around">
         <!-- SEARCHBAR -->
         <div class="search">
           <input type="search" placeholder="Хайх" id="searchbox" />
         </div>
-        <!-- LOGIN & BASKET -->
+        
         <div class="d-flex w-25 justify-content-around w-100">
+          <!-- Search Button -->
           <button
             type="button"
             class="btn"
@@ -172,7 +174,7 @@
             <img src="images/Tablet/search icon.svg" alt="" />
           </button>
 
-          <!-- Modal -->
+          <!-- Search Modal -->
           <div
             class="modal fade"
             id="exampleModal"
@@ -193,6 +195,7 @@
               </div>
             </div>
           </div>
+          <!-- Basket & Login -->
           <div class="d-flex">
             <button
               class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
@@ -304,7 +307,7 @@
               ><img src="images/Tablet/user.svg" alt="" class="me-1"
             /></a>
             <div
-              class="modal fade"
+              class="modal fade text-center"
               id="loginmodal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
@@ -317,19 +320,20 @@
                       <span></span>
                       <p class="m-0 ms-3">Нэвтрэх</p>
                     </div>
-                    <label for="useremail">И-мэйл </label>
+                    <label for="useremail" class="">И-мэйл </label>
                     <input
                       type="email"
                       name="user_email"
                       id="useremail"
                       placeholder="И-мэйл хаягаа оруулна уу."
                     />
-                    <label for="userpass">Нууц үг</label>
+                    <label for="userpass" >Нууц үг</label>
                     <input
                       type="password"
                       name="userpass"
                       id="userpass"
                       placeholder="Нууц үгээ оруулна уу."
+                      
                     />
                     <a href="forget.html">Нууц үгээ мартсан?</a>
                     <input
@@ -403,8 +407,8 @@
           </div>
         </div>
       </div>
-    </header>
-    <div
+      <!-- Login Modal -->
+      <div
       class="modal fade"
       id="exampleModalToggle"
       aria-hidden="true"
@@ -449,68 +453,71 @@
           </div>
         </div>
       </div>
-    </div>
-    <div
-      class="modal fade"
-      id="signupmodal1"
-      aria-hidden="true"
-      aria-labelledby="exampleModalToggleLabel2"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body">
-            <form onsubmit="login" id="nevtreh" class="text-start">
-              <div id="login">
-                <span></span>
-                <p>Бүртгүүлэх</p>
-              </div>
-              <br />
-              <label for="useremail">И-мэйл </label>
-              <input
-                type="email"
-                name="user_email"
-                id="useremail"
-                placeholder="И-мэйл хаягаа оруулна уу."
-              />
-              <label for="userpass">Нууц үг</label>
-              <input
-                type="password"
-                name="userpass"
-                id="userpass"
-                placeholder="Нууц үгээ оруулна уу."
-              />
-              <label for="userpass">Нууц үг давтах</label>
-
-              <input
-                type="password"
-                name="userpassagain"
-                id="userpass"
-                placeholder="Нууц үгээ оруулна уу."
-              />
-              <div id="check">
+      </div>
+      <!-- Register Modal -->
+      <div
+        class="modal fade"
+        id="signupmodal1"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <form onsubmit="login" id="nevtreh" class="text-start">
+                <div id="login">
+                  <span></span>
+                  <p>Бүртгүүлэх</p>
+                </div>
+                <br />
+                <label for="useremail">И-мэйл </label>
                 <input
-                  type="checkbox"
-                  name="checkbox"
-                  id="checkbox"
-                  style="width: 15px; height: 15px"
+                  type="email"
+                  name="user_email"
+                  id="useremail"
+                  placeholder="И-мэйл хаягаа оруулна уу."
                 />
-                <label for="checkbox">Үйлчилгээний нөхцөл зөвшөөрөх</label>
-              </div>
-              <input
-                type="submit"
-                value="Бүртгүүлэх"
-                name="signin"
-                id="signin"
-              />
-            </form>
+                <label for="userpass">Нууц үг</label>
+                <input
+                  type="password"
+                  name="userpass"
+                  id="userpass"
+                  placeholder="Нууц үгээ оруулна уу."
+                />
+                <label for="userpass">Нууц үг давтах</label>
+
+                <input
+                  type="password"
+                  name="userpassagain"
+                  id="userpass"
+                  placeholder="Нууц үгээ оруулна уу."
+                />
+                <div id="check">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox"
+                    style="width: 15px; height: 15px"
+                  />
+                  <label for="checkbox">Үйлчилгээний нөхцөл зөвшөөрөх</label>
+                </div>
+                <input
+                  type="submit"
+                  value="Бүртгүүлэх"
+                  name="signin"
+                  id="signin"
+                />
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
+    
 
     <main>
-      <!-- SLIDER -->
+      <!-- Carousel -->
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -599,7 +606,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
+      <!-- Info Panel -->
       <div id="features">
         <div id="inner" class="contents container">
           <div id="fast" class="boxes">
@@ -625,6 +632,7 @@
           </div>
         </div>
       </div>
+      <!-- Cards_1 -->
       <div class="sale contents">
         <div class="saletitle container">
           <div class="elas">
@@ -743,7 +751,7 @@
           </div>
         </div>
       </div>
-
+      <!-- Cards_2 -->
       <div class="sale contents">
         <div class="saletitle container">
           <div class="elas">
@@ -862,6 +870,7 @@
           </div>
         </div>
       </div>
+      <!-- Cards_3 -->
       <div class="sale contents">
         <div class="saletitle container">
           <div class="elas">
@@ -980,6 +989,7 @@
           </div>
         </div>
       </div>
+      <!-- Cards_4 -->
       <div class="sale mb-4 contents">
         <div class="saletitle container">
           <div class="elas">
@@ -1097,8 +1107,8 @@
           </div>
         </div>
       </div>
-    </main>
-    <div
+      <!-- Busket Modal -->
+      <div
       class="modal fade"
       id="staticBackdrop"
       data-bs-backdrop="static"
@@ -1162,7 +1172,9 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </main>
+    
     <footer>
       <div id="bot" class="contents">
         <div class="uptext">
