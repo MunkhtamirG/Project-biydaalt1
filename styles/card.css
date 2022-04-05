@@ -75,20 +75,17 @@
   width: 75px;
   height: 43px;
   background: #f17228;
-  border-radius: 0px 8px 0px 20px;
+  border-radius: 0px 4px 0px 20px;
   position: absolute;
-  text-align: center;
-  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Poppins";
   font-size: 18px;
   font-weight: 600;
   color: #fefefe;
 }
-.percent p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .card:hover {
   opacity: 1;
   z-index: 3;
@@ -155,19 +152,17 @@
     width: 130px;
   }
   .percent {
-    margin-left: 84px;
     width: 46px;
     height: 26px;
     align-items: center;
     display: flex;
     justify-content: center;
-  }
-  .percent p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
   }
+
   .name {
     font-family: "Poppins";
     font-style: normal;
@@ -217,19 +212,17 @@
     width: 136px;
   }
   .percent {
-    margin-left: 86px;
     width: 50px;
     height: 27px;
     align-items: center;
     display: flex;
     justify-content: center;
-  }
-  .percent p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
   }
+
   .salemeals div:nth-child(4) {
     display: none;
   }

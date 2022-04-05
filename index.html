@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/style.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -275,6 +274,8 @@
             <button
               class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
               type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#loginmodal"
             >
               <img src="images/Tablet/user.svg" alt="" class="me-1" />
               Нэвтрэх
@@ -282,9 +283,58 @@
             <button
               class="btn align-items-center d-flex d-lg-none justify-content-around fPoppins busketText"
               type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#loginmodal"
             >
               <img src="images/Tablet/user.svg" alt="" class="me-1" />
             </button>
+            <div
+              class="modal fade"
+              id="loginmodal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form onsubmit="login" id="nevtreh">
+                    <div id="login">
+                      <span></span>
+                      <p class="m-0 ms-3">Нэвтрэх</p>
+                    </div>
+                    <label for="useremail">И-мэйл </label>
+                    <input
+                      type="email"
+                      name="user_email"
+                      id="useremail"
+                      placeholder="И-мэйл хаягаа оруулна уу."
+                    />
+                    <label for="userpass">Нууц үг</label>
+                    <input
+                      type="password"
+                      name="userpass"
+                      id="userpass"
+                      placeholder="Нууц үгээ оруулна уу."
+                    />
+                    <a href="forget.html">Нууц үгээ мартсан?</a>
+                    <input
+                      type="submit"
+                      value="Нэвтрэх"
+                      name="signin"
+                      id="signin"
+                    />
+                    <p id="or">эсвэл</p>
+                    <input
+                      type="button"
+                      value="Бүртгүүлэх"
+                      name="signup"
+                      id="signup"
+                      onclick="window.location.href='register.html'"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -430,8 +480,9 @@
               <img src="images/basket_icon.png" alt="" />
               <p class="text-light">Сагслах</p>
             </div>
-            <div class="mealpic m-auto">
-              <div class="percent m-lg-2 mx-md-3 mx-2"><p>20%</p></div>
+            <div class="mealpic m-auto d-flex justify-content-end">
+              <p class="percent m-lg-2">20%</p>
+
               <img
                 src="images/sale/unsplash_TLD6iCOlyb0.png"
                 alt=""
@@ -456,8 +507,8 @@
               <img src="images/basket_icon.png" alt="" />
               <p class="text-light">Сагслах</p>
             </div>
-            <div class="mealpic m-auto">
-              <div class="percent m-lg-2 mx-md-3 mx-2"><p>20%</p></div>
+            <div class="mealpic m-auto d-flex justify-content-end">
+              <p class="percent m-lg-2">20%</p>
               <img
                 src="images/sale/unsplash_eeqbbemH9-c.png"
                 alt=""
@@ -482,8 +533,8 @@
               <img src="images/basket_icon.png" alt="" />
               <p class="text-light">Сагслах</p>
             </div>
-            <div class="mealpic m-auto">
-              <div class="percent m-lg-2 mx-md-3 mx-2"><p>20%</p></div>
+            <div class="mealpic m-auto d-flex justify-content-end">
+              <p class="percent m-lg-2">20%</p>
               <img
                 src="images/sale/sale/unsplash_fdlZBWIP0aM.svg"
                 alt=""
@@ -509,8 +560,8 @@
               <p class="text-light">Сагслах</p>
             </div>
 
-            <div class="mealpic m-auto">
-              <div class="percent m-lg-2 mx-md-3 mx-2"><p>20%</p></div>
+            <div class="mealpic m-auto d-flex justify-content-end">
+              <p class="percent m-lg-2">20%</p>
               <img src="images/sale/pic.png" alt="" class="pics m-lg-2" />
             </div>
             <div class="des">
