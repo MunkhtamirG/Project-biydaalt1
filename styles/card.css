@@ -177,7 +177,7 @@
   }
   .salemeals {
     height: 230px;
-    padding: 10px 37px 10px 37px;
+    /* padding: 10px 37px 10px 37px; */
   }
 }
 @media screen and (max-width: 767px) {

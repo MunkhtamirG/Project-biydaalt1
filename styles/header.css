@@ -62,12 +62,10 @@ header {
   border-radius: 10px;
   border: #fbc5a6 1px solid;
   width: 200px;
-
+text-indent: 25px;
   height: 32px;
 }
-input {
-  text-indent: 30px;
-}
+
 .menu {
   display: flex;
   align-items: center;

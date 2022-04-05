@@ -35,7 +35,7 @@ footer {
 .contact {
   width: 180px;
   height: 112px;
-  margin-left: 130px;
+  /* margin-left: 130px; */
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
@@ -106,7 +106,7 @@ footer {
 }
 #lasttext {
   display: flex;
-  width: 600px;
+  /* width: 600px; */
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
