@@ -5,22 +5,17 @@
   margin-right: 20px;
 }
 #top {
-  width: 1200px;
-  margin: auto;
-  font-family: "Poppins";
+  
+  
   font-weight: 700;
   font-size: 18px;
   display: flex;
   align-items: center;
 }
 #text {
-  width: 100%;
-  margin: auto;
-  font-family: "Poppins";
-  font-style: normal;
+  height: 40vh;
   font-weight: 400;
   font-size: 18px;
-  text-align: justify;
-  margin-bottom: 200px;
-  padding: 10px;
+  
+  
 }
