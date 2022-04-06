@@ -65,3 +65,12 @@
   height: 4vh;
   border: #f17228 1px solid;
 }
+@media screen and (max-width: 1024px) {
+  .addressbox {
+    width: 80vw !important;
+    margin: auto;
+  }
+  .step {
+    margin-left: 38px !important;
+  }
+}
