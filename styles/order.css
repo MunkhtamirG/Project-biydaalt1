@@ -1,0 +1,67 @@
+.step {
+  background-color: #f17228;
+  width: 282px !important;
+  height: 40px;
+  color: azure;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.stepsize {
+  font-size: 14px;
+}
+.address {
+  width: 80%;
+  height: 48px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #838383;
+  text-indent: 10px;
+}
+.addressbox {
+  width: 30vw !important;
+  height: 65vh;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+.addresstext {
+  color: #f17228;
+  font-weight: 600;
+  font-size: 16px;
+}
+.moreinfo {
+  width: 80%;
+  height: 112px;
+  border: #c4c4c4 1px solid;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.infotext {
+  color: #838383;
+  text-indent: 30px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.phone {
+  width: 80%;
+  height: 48px;
+  border: #c4c4c4 1px solid;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.paymentradio {
+  width: 80%;
+  margin: auto;
+}
+.price {
+  font-weight: 700;
+  font-size: 18px;
+  color: #f17228;
+}
+.orderbutton {
+  width: 80%;
+  color: aliceblue;
+  background-color: #f17228;
+  height: 4vh;
+  border: #f17228 1px solid;
+}

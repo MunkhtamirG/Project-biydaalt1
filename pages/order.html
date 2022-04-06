@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food delivery</title>
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/order.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="contents d-flex justify-content-between container">
+      <!-- More Menu-->
+      <button
+        class="btn d-block d-md-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop"
+      >
+        <img src="../images/Tablet/more.svg" alt="" />
+      </button>
+      <!-- More Menu OffCanvas -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 id="offcanvasTopLabel"></h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <div class="userinfo">
+              <a href="../pages/menu.html">
+                <div class="more">
+                  <div>
+                    <div class="icon">
+                      <img
+                        src="../images/Tablet/spoon.svg"
+                        alt=""
+                        class="inicon"
+                      />
+                    </div>
+                    <p>Хоолны цэс</p>
+                  </div>
+                  <img
+                    src="../images/Tablet/arrow.svg"
+                    alt=""
+                    class="arrow"
+                    style="margin: none"
+                  /></div
+              ></a>
+              <span></span>
+              <a href="../pages/delivery.html">
+                <div class="more">
+                  <div>
+                    <div class="icon">
+                      <img
+                        src="../images/Tablet/mapicon.svg"
+                        alt=""
+                        class="inicon"
+                      />
+                    </div>
+                    <p>Хүргэлтийн бүс</p>
+                  </div>
+                  <img
+                    src="../images/Tablet/arrow.svg"
+                    alt=""
+                    class="arrow"
+                    style="margin: none"
+                  /></div
+              ></a>
+            </div>
+            <div class="userinfo">
+              <a href="#">
+                <div class="more">
+                  <div>
+                    <div class="icon">
+                      <img
+                        src="../images/Tablet/user.svg"
+                        alt=""
+                        class="inicon"
+                      />
+                    </div>
+                    <p>Хэрэглэгчийн мэдээлэл</p>
+                  </div>
+                  <img
+                    src="../images/Tablet/arrow.svg"
+                    alt=""
+                    class="arrow"
+                    style="margin: none"
+                  /></div
+              ></a>
+              <span></span>
+              <a href="order.html">
+                <div class="more">
+                  <div>
+                    <div class="icon">
+                      <img
+                        src="../images/Tablet/busket.svg"
+                        alt=""
+                        class="inicon"
+                      />
+                    </div>
+                    <p>Миний захиалга</p>
+                  </div>
+                  <img
+                    src="../images/Tablet/arrow.svg"
+                    alt=""
+                    class="arrow"
+                    style="margin: none"
+                  /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Logo -->
+      <a class="text-decoration-none align-baseline" href="../index.html"
+        ><div id="logo">
+          <img src="../images/iamage.png" alt="icon" id="homeicon" />
+          <p class="text-decoration-none mt-3" id="name">Food Delivery</p>
+        </div></a
+      >
+      <!-- MENU -->
+      <div class="menu">
+        <a href="../index.html" class="fPoppins">НҮҮР</a>
+        <a href="menu.html" class="fPoppins">ХООЛНЫ ЦЭС</a>
+        <a href="delivery.html" class="fPoppins">ХҮРГЭЛТИЙН БҮС</a>
+      </div>
+      <!-- Right Side -->
+      <div id="icons" class="d-flex justify-content-around">
+        <!-- SEARCHBAR -->
+        <div class="search">
+          <input type="search" placeholder="Хайх" id="searchbox" />
+        </div>
+
+        <div class="d-flex w-25 justify-content-around w-100">
+          <!-- Search Button -->
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            id="searchicon"
+          >
+            <img src="../images/Tablet/search icon.svg" alt="" />
+          </button>
+
+          <!-- Search Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body p-0 modalout">
+                  <input
+                    type="search"
+                    placeholder="Хайх"
+                    id="searchbox"
+                    class="w-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Basket & Login -->
+          <div class="d-flex">
+            <button
+              class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <img src="../images/Tablet/busket.svg" alt="" class="me-1" />
+              Сагс
+            </button>
+            <button
+              class="btn align-items-center d-none d-md-flex d-lg-none justify-content-around fPoppins busketText"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <img src="../images/Tablet/busket.svg" alt="" class="me-1" />
+            </button>
+
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+                <h5
+                  id="offcanvasRightLabel"
+                  class="text-center col-12 canHeadText"
+                >
+                  Таны сагс
+                </h5>
+              </div>
+              <div
+                class="offcanvas-body d-flex flex-column m-4 justify-content-between p-4"
+              >
+                <div>
+                  <div class="d-flex">
+                    <div class="col-4">
+                      <img
+                        src="../images/desert/unsplash_cLpdEA23Z44.png"
+                        alt=""
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="fPoppins mx-2 col-8">
+                      <div class="d-flex d-flex justify-content-between">
+                        <p class="m-0">Хулууны зутан</p>
+                        <img
+                          src="images/Tablet/cancel2.svg"
+                          alt=""
+                          style="width: 15px"
+                        />
+                      </div>
+                      <p class="price fPoppins">6,800₮</p>
+                      <div class="d-flex align-items-center">
+                        <p class="smallbox text-center rounded">-</p>
+                        <p class="smboxinn text-center rounded">1</p>
+                        <p class="smallbox text-center rounded">+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4 orange"></div>
+                </div>
+                <div class="text-end fPoppins">
+                  <p class="fs-5">Нийт: 6,800₮</p>
+                  <button class="btn fs-5 me-3 canvasbox">Захиалах</button>
+                </div>
+              </div>
+            </div>
+
+            <a
+              class="btn align-items-center d-none d-lg-flex justify-content-around fPoppins busketText"
+              data-bs-toggle="modal"
+              href="#exampleModalToggle"
+              role="button"
+              ><img src="../images/Tablet/user.svg" alt="" class="me-1" />
+              Нэвтрэх</a
+            >
+
+            <a
+              class="btn align-items-center d-flex d-lg-none justify-content-around fPoppins busketText"
+              data-bs-toggle="modal"
+              href="#exampleModalToggle"
+              role="button"
+              ><img src="../images/Tablet/user.svg" alt="" class="me-1"
+            /></a>
+            <div
+              class="modal fade text-center"
+              id="loginmodal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form onsubmit="login" id="nevtreh">
+                    <div id="login">
+                      <span></span>
+                      <p class="m-0 ms-3">Нэвтрэх</p>
+                    </div>
+                    <label for="useremail" class="">И-мэйл </label>
+                    <input
+                      type="email"
+                      name="user_email"
+                      id="useremail"
+                      placeholder="И-мэйл хаягаа оруулна уу."
+                    />
+                    <label for="userpass">Нууц үг</label>
+                    <input
+                      type="password"
+                      name="userpass"
+                      id="userpass"
+                      placeholder="Нууц үгээ оруулна уу."
+                    />
+                    <a href="forget.html">Нууц үгээ мартсан?</a>
+                    <input
+                      type="submit"
+                      value="Нэвтрэх"
+                      name="signin"
+                      id="signin"
+                    />
+                    <p id="or">эсвэл</p>
+                    <button
+                      class="btn align-items-center d-flex justify-content-around fPoppins busketText"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signupmodal"
+                      id="signup"
+                    >
+                      Бүртгүүлэх
+                    </button>
+                    <div
+                      class="modal fade"
+                      id="signupmodal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel2"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <form onsubmit="login" id="nevtreh">
+                            <div id="login">
+                              <span></span>
+                              <p class="m-0 ms-3">Нэвтрэх</p>
+                            </div>
+                            <label for="useremail">И-мэйл </label>
+                            <input
+                              type="email"
+                              name="user_email"
+                              id="useremail"
+                              placeholder="И-мэйл хаягаа оруулна уу."
+                            />
+                            <label for="userpass">Нууц үг</label>
+                            <input
+                              type="password"
+                              name="userpass"
+                              id="userpass"
+                              placeholder="Нууц үгээ оруулна уу."
+                            />
+                            <a href="forget.html">Нууц үгээ мартсан?</a>
+                            <input
+                              type="submit"
+                              value="Нэвтрэх"
+                              name="signin"
+                              id="signin"
+                            />
+                            <p id="or">эсвэл</p>
+                            <button
+                              class="btn align-items-center d-flex justify-content-around fPoppins busketText"
+                              type="button"
+                              data-bs-toggle="modal"
+                              data-bs-target="#signupmodal"
+                              id="signup"
+                            >
+                              Бүртгүүлэх
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Login Modal -->
+      <div
+        class="modal fade m-0"
+        id="exampleModalToggle"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body" id="nevtreh">
+              <form onsubmit="login">
+                <div id="login">
+                  <span></span>
+                  <p>Нэвтрэх</p>
+                </div>
+                <br />
+                <label for="useremail">И-мэйл </label>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="useremail"
+                  placeholder="И-мэйл хаягаа оруулна уу."
+                />
+                <label for="userpass">Нууц үг</label>
+                <input
+                  type="password"
+                  name="userpass"
+                  id="userpass"
+                  placeholder="Нууц үгээ оруулна уу."
+                />
+                <a
+                  data-bs-target="#forgetmodal"
+                  data-bs-toggle="modal"
+                  href="forget.html"
+                  >Нууц үгээ мартсан?</a
+                >
+                <input
+                  type="submit"
+                  value="Нэвтрэх"
+                  name="signin"
+                  id="signin"
+                />
+                <p id="or">эсвэл</p>
+              </form>
+              <button
+                class="btn"
+                data-bs-target="#signupmodal1"
+                data-bs-toggle="modal"
+                id="signup"
+              >
+                Бүртгүүлэх
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Register Modal -->
+      <div
+        class="modal fade"
+        id="signupmodal1"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <form onsubmit="login" id="nevtreh" class="text-start">
+                <div id="login">
+                  <span></span>
+                  <p>Бүртгүүлэх</p>
+                </div>
+                <br />
+                <label for="useremail">И-мэйл </label>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="useremail"
+                  placeholder="И-мэйл хаягаа оруулна уу."
+                />
+                <label for="userpass">Нууц үг</label>
+                <input
+                  type="password"
+                  name="userpass"
+                  id="userpass"
+                  placeholder="Нууц үгээ оруулна уу."
+                />
+                <label for="userpass">Нууц үг давтах</label>
+
+                <input
+                  type="password"
+                  name="userpassagain"
+                  id="userpass"
+                  placeholder="Нууц үгээ оруулна уу."
+                />
+                <div id="check">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox"
+                    style="width: 15px; height: 15px"
+                  />
+                  <label for="checkbox">Үйлчилгээний нөхцөл зөвшөөрөх</label>
+                </div>
+                <input
+                  type="submit"
+                  value="Бүртгүүлэх"
+                  name="signin"
+                  id="signin"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Forget Modal -->
+      <div
+        class="modal fade"
+        id="forgetmodal"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <form onsubmit="login" id="nevtreh">
+                <div class="d-flex align-items-center my-4">
+                  <div id="rectangle"></div>
+                  <p class="m-0 mx-2 fPoppins">Нууц үг сэргээх</p>
+                </div>
+                <label for="useremail">И-мэйл </label>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="useremail"
+                  placeholder="И-мэйл хаягаа оруулна уу."
+                  class="my-4"
+                />
+
+                <input
+                  type="submit"
+                  value="Үргэлжлүүлэх"
+                  name="signin"
+                  id="signin"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container d-flex justify-content-around">
+        <div class="">
+          <div
+            class="d-flex fPoppins step align-items-center justify-content-center my-4"
+          >
+            <p class="m-0 me-2 stepsize">Алхам 1</p>
+            <img
+              src="../images/Tablet/arrow right.svg"
+              alt=""
+              style="width: 6px"
+            />
+            <p class="m-0 ms-2 stepsize">Хаягийн мэдээлэл оруулах</p>
+          </div>
+          <div class="addressbox p-4">
+            <p class="fPoppins addresstext mt-4 mb-0 ms-4 px-4">
+              Хаягаа оруулна уу.
+            </p>
+            <div class="text-center mb-4">
+              <select name="address" class="address fPoppins">
+                <option value=" Дүүрэг сонгоно уу.">
+                  <img src="../images/Tablet/addressicon.svg" alt="" /> Дүүрэг
+                  сонгоно уу.
+                </option>
+                <option value=" Баянзүрх дүүрэг">Баянзүрх дүүрэг</option>
+                <option value="Хан-Уул дүүрэг">Хан-Уул дүүрэг</option>
+                <option value="Баянгол дүүрэг">Баянгол дүүрэг</option>
+                <option value="Сонгинохайрхан дүүрэг">
+                  Сонгинохайрхан дүүрэг
+                </option>
+                <option value="Чингэлтэй дүүрэг">Чингэлтэй дүүрэг</option>
+              </select>
+              <select name="address" class="address fPoppins">
+                <option value="Хороо сонгоно уу.">Хороо сонгоно уу.</option>
+                <option value="1-р хороо">1-р хороо</option>
+                <option value="2-р хороо">2-р хороо</option>
+                <option value="3-р хороо">3-р хороо</option>
+                <option value="4-р хороо">4-р хороо</option>
+                <option value="5-р хороо">5-р хороо</option>
+                <option value="6-р хороо">6-р хороо</option>
+                <option value="7-р хороо">7-р хороо</option>
+                <option value="8-р хороо">8-р хороо</option>
+              </select>
+              <select name="address" class="address fPoppins mb-4">
+                <option value="Байр, гудамж сонгоно уу.">
+                  Байр, гудамж сонгоно уу.
+                </option>
+                <option value="Нархан хотхон">Нархан хотхон</option>
+                <option value="26-р байр">26-р байр</option>
+                <option value="Хоймор хотхон">Хоймор хотхон</option>
+                <option value="45-р байр">45-р байр</option>
+                <option value="44-р байр">44-р байр</option>
+                <option value="Зайсан хотхон ">Зайсан хотхон</option>
+                <option value="67-р байр">67-р байр</option>
+                <option value="55-р байр">55-р байр</option>
+              </select>
+            </div>
+            <p class="fPoppins addresstext mt-4 mb-0 ms-4 px-4">
+              Нэмэлт мэдээлэл
+            </p>
+            <div class="moreinfo m-auto my-2">
+              <p class="fPoppins infotext">Орц, давхар, орцны код.....</p>
+            </div>
+            <p class="fPoppins addresstext mt-4 mb-0 ms-4 px-4">
+              Утасны дугаар*
+            </p>
+            <div class="phone m-auto my-2 d-flex align-items-center">
+              <p class="fPoppins infotext">Утасны дугаараа оруулна уу.</p>
+            </div>
+            <p class="fPoppins addresstext mt-4 mb-0 ms-4 px-4">
+              Төлбөр төлөх сонголт
+            </p>
+            <div class="paymentradio d-flex justify-content-between my-3">
+              <div>
+                <input
+                  type="radio"
+                  id="belen"
+                  name="fav_language"
+                  value="Бэлнээр "
+                />
+                  <label for="belen ">Бэлнээр </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="cart"
+                  name="fav_language"
+                  value="Картаар "
+                />
+                  <label for="belen ">Картаар </label>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="d-flex fPoppins step align-items-center justify-content-center my-4"
+          >
+            <p class="m-0 me-2 stepsize">Алхам 2</p>
+            <img
+              src="../images/Tablet/arrow right.svg"
+              alt=""
+              style="width: 6px"
+            />
+            <p class="m-0 ms-2 stepsize">Захиалга баталгаажуулах</p>
+          </div>
+          <div
+            class="addressbox p-4 d-flex flex-column justify-content-between"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="m-0 fPoppins">Хулууны зутан (1)</p>
+              <div class="d-flex">
+                <p class="price fPoppins m-0 me-4">6,800₮</p>
+                <img src="../images/Tablet/cancel2.svg" alt="" />
+              </div>
+            </div>
+            <div class="text-center">
+              <p class="text-end fPoppins">Нийт: 13,840₮</p>
+              <button class="orderbutton" type="submit">Захиалах</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="bot" class="container">
+        <div class="uptext">
+          <img
+            src="../images/footlogo.png"
+            alt=""
+            width="176px"
+            height="40px"
+            id="footlogo"
+          />
+          <div class="footertext">
+            <div class="footmenu">
+              <a href="../index.html">Нүүр</a>
+              <a href="menu.html">Хоолны цэс</a>
+              <a href="delivery.html">Хүргэлтийн бүс</a>
+            </div>
+            <div class="contact">
+              <p>Холбоо барих</p>
+              <p>(976) 77123456</p>
+              <p>(976) 77123456</p>
+            </div>
+          </div>
+        </div>
+        <div id="socialmobile">
+          <img src="../images/Tablet/fb.svg" alt="" />
+          <img src="../images/Tablet/ig.svg" alt="" />
+          <img src="../images/Tablet/twitter.svg" alt="" />
+        </div>
+        <div class="bottonline"></div>
+        <div id="foottext">
+          <div id="social">
+            <p>Бидэнтэй нэгдээрэй</p>
+            <div id="socialicon">
+              <a href="https://www.facebook.com/" target="blank">
+                <img src="../images/Socialicon/fb.png" alt="fb"
+              /></a>
+              <a href="https://www.instagram.com/" target="blank"
+                ><img src="../images/Socialicon/instagram.png" alt="fb"
+              /></a>
+              <a href="https://twitter.com/" target="blank"
+                ><img src="../images/Socialicon/twitter.svg" alt="fb"
+              /></a>
+            </div>
+          </div>
+          <div id="lasttext">
+            <div id="terms">
+              <a href="terms.html">Үйлчилгээний нөхцөл</a>
+              <a href="privacy.html">Нууцлалын бодлого</a>
+            </div>
+            <div id="copyright">
+              <p>© 2020 MStars Foods LLC</p>
+              <p>Зохиогчийн эрх хуулиар хамгаалагдсан.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+    </footer>
+  </body>
+</html>
