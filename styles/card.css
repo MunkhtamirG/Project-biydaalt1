@@ -1,8 +1,7 @@
-
 .sale {
   display: flex;
   flex-direction: column;
- justify-content: space-around;
+  justify-content: space-around;
   align-items: center;
 }
 .saletitle {
@@ -100,21 +99,21 @@
 .busketicon {
   width: 100%;
   height: 100%;
-  text-align: center;
-  display: flex;
+  /* text-align: center; */
+  /* display: flex; */
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  color: #ffffff;
+  /* color: #ffffff; */
   background-color: #00000083 !important;
   position: absolute;
   opacity: 0;
-  font-size: 16px;
+  /* font-size: 16px; */
   font-family: "Poppins";
-  font-weight: 400;
-  text-decoration: underline;
-  border-radius: 10px;
-  transition: 0.3s;
+  /* font-weight: 400; */
+  /* text-decoration: underline; */
+  /* border-radius: 10px; */
+  /* transition: 0.3s; */
 }
 .seealliacon {
   display: none;
@@ -208,6 +207,9 @@
   }
   .pics {
     width: 136px;
+  }
+  .basketicon {
+    width: 25px;
   }
   .percent {
     width: 50px;
