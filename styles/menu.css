@@ -6,12 +6,10 @@
   max-width: 1224px;
   margin: auto;
 }
-.card {
-  /* margin-left: 24px; */
-  /* margin-top: 24px; */
-}
+
 #menu {
   display: flex;
+
   width: 100%;
   height: 88px;
   padding-left: 10px;
@@ -34,7 +32,7 @@
 }
 .box:hover {
   background-color: #f17228;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 #first {
   background-color: #f17228;
@@ -54,17 +52,7 @@ body {
     opacity: 1;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .contents {
-    width: 100%;
-    margin: 0px;
-    justify-content: space-around;
-  }
-  .box {
-    margin: 0px;
-    width: 160px;
-    height: 40px;
-  }
+@media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 767px) {
   #forth {
@@ -78,5 +66,8 @@ body {
     width: 100px;
     height: 40px;
     margin: 0px;
+  }
+  #menu {
+    justify-content: space-between;
   }
 }
