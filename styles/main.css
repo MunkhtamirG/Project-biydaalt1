@@ -88,6 +88,7 @@ body {
 }
 .fPoppins {
   font-family: "Poppins" !important;
+  color: #f17228;
 }
 .modalnum {
   background-color: #fff1e9;
@@ -98,11 +99,11 @@ body {
 .bgofbutton {
   background-color: #f17228 !important;
 }
-#login {
+#rectangle {
   width: 11px;
   height: 30px;
   background-color: #f17228;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   display: flex;
   align-items: center;
 }
@@ -117,16 +118,15 @@ body {
   text-transform: uppercase;
 }
 #nevtreh {
-  
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 18px;
-  display: flex;
+  /* font-size: 18px; */
+  /* display: flex; */
   justify-content: start;
   flex-direction: column;
   margin-bottom: 88px;
   margin-top: 48px;
-  padding: 50px;
+  padding: 0px 50px;
 }
 #nevtreh label {
   font-family: "Poppins";
@@ -139,7 +139,7 @@ body {
   height: 40px;
   margin-bottom: 20px;
   margin-top: 20px;
-  
+
   box-sizing: border-box;
 }
 
@@ -153,7 +153,6 @@ body {
   font-size: 12px;
 }
 #signin {
-  
   height: 48px;
   background-color: #f17228;
   border-radius: 20px;
@@ -188,6 +187,7 @@ body {
 #useremail {
   border-radius: 20px;
   border: #f17228 1px solid;
+  text-indent: 20px;
 }
 #userpass {
   border-radius: 20px;
@@ -206,12 +206,10 @@ body {
   height: 75vh !important;
 }
 #staticBackdrop {
-  
   width: 80%;
 }
 @media screen and (max-width: 1024px) {
   #staticBackdrop {
-  
     width: 100%;
   }
   #features {
@@ -231,7 +229,6 @@ body {
     box-shadow: none;
   }
 
-  
   .feIcon {
     width: 40px;
     height: 40px;
@@ -275,20 +272,17 @@ body {
     width: 5px;
     height: 20px;
     margin-right: 5px;
-   
   }
   #nevtreh label {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-   
+
     margin-top: 50px;
   }
   #nevtreh input {
-   
     margin: auto;
-    
   }
 
   #login p {
@@ -306,12 +300,10 @@ body {
 }
 @media screen and (max-width: 767px) {
   #staticBackdrop {
-  
     width: 100%;
   }
   #modal {
     width: 100%;
-    
   }
   #features {
     background-image: url(../images/base.feature.svg);
@@ -340,7 +332,6 @@ body {
     font-weight: 600;
     font-size: 22px;
     border: none;
-    
   }
   .slidertext {
     font-size: 22px !important;
@@ -364,30 +355,3 @@ body {
     justify-content: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

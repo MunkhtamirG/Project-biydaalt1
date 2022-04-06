@@ -422,7 +422,12 @@
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
                 />
-                <a href="forget.html">Нууц үгээ мартсан?</a>
+                <a
+                  data-bs-target="#forgetmodal"
+                  data-bs-toggle="modal"
+                  href="forget.html"
+                  >Нууц үгээ мартсан?</a
+                >
                 <input
                   type="submit"
                   value="Нэвтрэх"
@@ -494,6 +499,41 @@
                 <input
                   type="submit"
                   value="Бүртгүүлэх"
+                  name="signin"
+                  id="signin"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Forget Modal -->
+      <div
+        class="modal fade"
+        id="forgetmodal"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <form onsubmit="login" id="nevtreh">
+                <div class="d-flex align-items-center my-4">
+                  <div id="rectangle"></div>
+                  <p class="m-0 mx-2 fPoppins">Нууц үг сэргээх</p>
+                </div>
+                <label for="useremail">И-мэйл </label>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="useremail"
+                  placeholder="И-мэйл хаягаа оруулна уу."
+                />
+
+                <input
+                  type="submit"
+                  value="Үргэлжлүүлэх"
                   name="signin"
                   id="signin"
                 />
@@ -664,11 +704,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto d-flex justify-content-end">
@@ -690,11 +730,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto d-flex justify-content-end">
@@ -716,11 +756,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
 
@@ -761,11 +801,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -790,7 +830,7 @@
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -810,11 +850,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -834,11 +874,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -881,11 +921,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -905,11 +945,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -929,11 +969,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -953,11 +993,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -999,11 +1039,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -1023,11 +1063,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -1047,11 +1087,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
@@ -1071,11 +1111,11 @@
           <div class="card p-0">
             <div
               type="button"
-              class="btn busketicon text-center d-flex flex-col align-items-center p-0"
+              class="btn busketicon text-center d-flex flex-column align-items-center p-0"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
-              <img src="images/basket_icon.png" alt="" />
+              <img src="images/basket_icon.png" alt="" class="basketicon" />
               <p class="text-light">Сагслах</p>
             </div>
             <div class="mealpic m-auto">
