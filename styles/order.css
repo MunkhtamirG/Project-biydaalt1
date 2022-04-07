@@ -74,3 +74,8 @@
     margin-left: 38px !important;
   }
 }
+@media screen and (max-width: 767px) {
+  .addressbox {
+    height: 90vh;
+  }
+}
