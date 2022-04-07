@@ -52,6 +52,9 @@ body {
     opacity: 1;
   }
 }
+.lastone {
+  opacity: 0;
+}
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 767px) {
