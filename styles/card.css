@@ -1,55 +1,23 @@
-.sale {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+.rectangle {
+  width: 10px;
+  height: 3vh;
+  background-color: #f17228;
 }
-.saletitle {
-  justify-content: space-between;
-  display: flex;
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.elas {
-  display: flex;
-  height: 30px;
-  align-items: center;
-}
-
-.elas p {
-  font-family: "Poppins";
+.menuWord {
   font-size: 20px;
   font-weight: 700;
-  margin-left: 15px;
 }
 .seeall {
-  display: flex;
-  height: 48px;
-  width: 180px;
   background: #f17228;
   color: #ffffff;
-  align-items: center;
-  justify-content: space-evenly;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
+  border-radius: 25px;
 }
-.salemeals {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  /* height: 304px; */
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-}
-.name {
-  font-family: "Poppins";
+.title {
   font-weight: 600;
   font-size: 16px;
 }
 .price {
-  display: flex;
   color: #f17228;
   font-weight: 600;
   font-size: 18px;
@@ -57,36 +25,21 @@
 .oldprice {
   color: #171717;
   font-weight: 400;
-  margin-left: 13px;
   text-decoration-line: line-through;
 }
-.des p {
-  margin: 5px 0px 0px 10px;
-}
 .card {
-  border-radius: 8px !important;
-  background: #fefefe;
+  border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-  
 }
 .percent {
-  width: 75px;
-  height: 43px;
   background: #f17228;
   border-radius: 0px 4px 0px 20px;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poppins";
   font-size: 18px;
   font-weight: 600;
   color: #fefefe;
-}
-
-.card:hover {
-  opacity: 1;
-  z-index: 3;
+  right: 0;
+  top: 0;
 }
 .busketicon:hover {
   opacity: 1;
@@ -100,125 +53,25 @@
 .busketicon {
   width: 100%;
   height: 100%;
-
-  flex-direction: column;
-
-  justify-content: center;
-
   background-color: #00000083 !important;
   position: absolute;
   opacity: 0;
-
-  font-family: "Poppins";
 }
 .seealliacon {
-  display: none;
+  transform: rotate(180deg);
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .contents {
-    width: 100%;
-  }
-  .elas {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-  }
-  .saletitle {
-    max-width: 656px;
-  }
-  .seeall {
-    display: none;
-  }
-  .seealliacon {
-    width: 15px;
-    height: 30px;
-    display: block;
-    transform: rotate(180deg);
-  }
-  .card {
-    /* width: 160px; */
-    /* height: 200px; */
-  }
 
-  .pics {
-    width: 100%;
-  
-  }
+@media screen and (max-width: 1024px) {
+
   .percent {
-    width: 46px;
-    height: 26px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
     font-size: 14px;
-  }
-
-  .name {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
   }
   .price {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
     font-size: 14px;
-  }
-  .salemeals {
-    height: 230px;
-    /* padding: 10px 37px 10px 37px; */
   }
 }
 @media screen and (max-width: 767px) {
-  .elas p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-  }
-  .seeall {
-    display: none;
-  }
-  .seealliacon {
-    width: 8px;
-    height: 16px;
-    display: block;
-    transform: rotate(180deg);
-  }
-  .card {
-    width: 156px;
-    height: 190px;
-    padding: 10px;
-  }
-  .busketicon {
-    width: 100%;
-    height: 100%;
-    background-color: #171717;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .pics {
-    width: 100%;
-  
-  }
-  .basketicon {
-    width: 25px;
-  }
   .percent {
-    width: 50px;
-    height: 27px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
     font-size: 12px;
   }
 
@@ -229,55 +82,10 @@
     display: none;
   }
   .name {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
     font-size: 12px;
   }
   .price {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
     font-size: 12px;
   }
 }
-.smallbox {
-  width: 20px;
-  height: 20px;
-  margin: 5px;
-  background-color: #f17228;
-  color: #ffffff;
-}
-.smboxinn {
-  width: 20px;
-  height: 20px;
-  margin: 5px;
-  background-color: #fff1e9;
-  color: #f17228;
-}
-.orange {
-  border: #f17228 1px solid;
-}
-.canvasbox {
-  width: 90%;
-  padding: 10px;
-  background-color: #f17228 !important;
-  color: #ffffff !important;
-}
-.drop {
-  cursor: pointer;
-  display: block;
-}
 
-.drop + input {
-  display: none;
-}
-
-.drop + input + div {
-  display: none;
-}
-
-.drop + input:checked + div {
-  display: block;
-  transition: 3s;
-}

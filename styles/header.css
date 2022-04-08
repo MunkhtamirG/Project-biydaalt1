@@ -61,6 +61,25 @@ body {
 .modalout {
   border: #f17228 1px solid;
 }
+.smallbox {
+  width: 20%;
+   background-color: #f17228;
+   color: #ffffff;
+ }
+ .smboxinn {
+   width: 100%;
+   background-color: #fff1e9;
+   color: #f17228;
+ }
+ .orange {
+  border: #f17228 1px solid;
+}
+.canvasbox {
+  width: 90%;
+  padding: 10px;
+  background-color: #f17228 !important;
+  color: #ffffff !important;
+}
 @keyframes fadeInAnimation {
   0% {
     opacity: 0.1;
