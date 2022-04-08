@@ -67,6 +67,7 @@
   border-radius: 8px !important;
   background: #fefefe;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  
 }
 .percent {
   width: 75px;
@@ -136,12 +137,13 @@
     transform: rotate(180deg);
   }
   .card {
-    width: 160px;
-    height: 200px;
+    /* width: 160px; */
+    /* height: 200px; */
   }
 
   .pics {
-    width: 130px;
+    width: 100%;
+  
   }
   .percent {
     width: 46px;
@@ -191,6 +193,7 @@
   .card {
     width: 156px;
     height: 190px;
+    padding: 10px;
   }
   .busketicon {
     width: 100%;
@@ -201,7 +204,8 @@
     align-items: center;
   }
   .pics {
-    width: 136px;
+    width: 100%;
+  
   }
   .basketicon {
     width: 25px;
