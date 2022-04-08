@@ -1,216 +1,60 @@
 footer {
   background-image: url(../images/footerbase.png);
-  height: 384px;
-  background-size: 100%;
-  /* align-content: space-between; */
-  margin-top: 60px;
-}
-#socialmobile {
-  display: none;
-}
-.footertext {
-  display: flex;
 }
 .footmenu {
-  width: 180px;
-  height: 112px;
-  margin-left: 130px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
 }
-.footmenu a {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
+#footlogo {
+  width: 15%;
+  height: 15%;
+}
+.footmenu a { 
   font-size: 16px;
-  line-height: 24px;
-  text-decoration-line: underline;
-  margin: 0px;
-  margin-bottom: 14px;
-  color: #ffffff;
-  display: block;
-  text-align: left;
 }
 .contact {
-  width: 180px;
-  height: 112px;
-  /* margin-left: 130px; */
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-}
-.contact p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
   text-decoration-line: underline;
-  margin: 0px;
-  margin-bottom: 14px;
-}
-.uptext {
-  padding: 24px;
-  margin: auto;
-  display: flex;
-  /* width: 1200px; */
 }
 .bottonline {
-  width: 100%;
-  height: 0px;
   border: #ffffff 1px solid;
-  margin: auto;
-  margin-top: 130px;
+  margin-top: 10vh;
 }
-#foottext {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin: auto;
-}
+
 #social {
-  text-align: center;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   color: #ffffff;
 }
 #copyright {
-  width: 236px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   color: #ffffff;
-  text-align: right;
 }
 #terms {
-  display: flex;
-  width: 282px;
-  justify-content: space-between;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   color: #ffffff;
 }
 #terms a {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   color: #ffffff;
-  margin-top: 12px;
 }
-#lasttext {
-  display: flex;
-  /* width: 600px; */
-  justify-content: space-between;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  footer {
-    width: 100%;
-    height: 384px;
-  }
-  #socialmobile {
-    display: none;
-  }
-  .footertext {
-    display: flex;
-  }
-  #footlogo {
-    width: 160px;
-    height: 35px;
-  }
-  .footmenu {
-    margin-left: 110px;
-    width: 180px;
-  }
+@media screen and (max-width: 1024px) {
   .footmenu a {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
     font-size: 14px;
-  }
-  .uptext {
-    width: 99%;
   }
   .contact p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
     font-size: 14px;
   }
-  .footertext {
-    width: 70%;
+  #footlogo {
+    width: 30%;
+    height: 30%;
   }
 }
 @media screen and (max-width: 767px) {
-  footer {
-    height: 511px;
-    background-size: 100%;
-    margin: 0px;
-  }
-  #footlogo {
-    width: 158px;
-    height: 35px;
-    margin-top: 31px;
-  }
-  .footmenu {
-    text-align: left;
-    margin: 0px;
-  }
-  .footmenu a {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-  }
-  .uptext {
-    display: block;
-  }
-  .contact {
-    margin: 0px;
-  }
-  .contact p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-  }
-  .footertext {
-    display: flex;
-    margin-top: 25px;
-  }
-  #social {
-    display: none;
-  }
-  #socialmobile {
-    /* display: block; */
-    display: flex;
-    margin: auto;
-    margin-top: 85px;
-
-    width: 157px;
-    justify-content: space-around;
-  }
-  .bottonline {
-    margin-top: 30px;
-  }
-  #terms {
-    flex-direction: column;
-    width: 151px;
-  }
-  #copyright p:last-child {
-    display: none;
-  }
-  #copyright {
-    width: 148px;
-    margin-left: 202px;
-  }
   #lasttext {
-    display: block;
+    width: 100% !important;
   }
+
 }
