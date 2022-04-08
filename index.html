@@ -306,9 +306,9 @@
             >
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <form onsubmit="login" id="nevtreh">
+                  <form onsubmit="login" id="nevtreh" class="p-4">
                     <div id="login">
-                      <span></span>
+                      <span class="rectangle"></span>
                       <p class="m-0 ms-3">Нэвтрэх</p>
                     </div>
                     <label for="useremail" class="">И-мэйл </label>
@@ -352,7 +352,7 @@
                         <div class="modal-content">
                           <form onsubmit="login" id="nevtreh">
                             <div id="login">
-                              <span></span>
+                              <span class="rectangle"></span>
                               <p class="m-0 ms-3">Нэвтрэх</p>
                             </div>
                             <label for="useremail">И-мэйл </label>
@@ -407,11 +407,11 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body" id="nevtreh">
+            <div class="modal-body p-4 m-4" id="nevtreh">
               <form onsubmit="login">
-                <div id="login">
-                  <span></span>
-                  <p>Нэвтрэх</p>
+                <div id="login" class="d-flex align-items-center">
+                  <div class="rectangle"></div>
+                  <p class="m-0 ms-2">Нэвтрэх</p>
                 </div>
                 <br />
                 <label for="useremail">И-мэйл </label>
@@ -420,6 +420,7 @@
                   name="user_email"
                   id="useremail"
                   placeholder="И-мэйл хаягаа оруулна уу."
+                  class="my-4"
                 />
                 <label for="userpass">Нууц үг</label>
                 <input
@@ -427,11 +428,14 @@
                   name="userpass"
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
+                  class="my-4"
+
                 />
                 <a
                   data-bs-target="#forgetmodal"
                   data-bs-toggle="modal"
                   href="forget.html"
+                  class="d-flex justify-content-end"
                   >Нууц үгээ мартсан?</a
                 >
                 <input
@@ -439,8 +443,9 @@
                   value="Нэвтрэх"
                   name="signin"
                   id="signin"
+                  class="mt-4"
                 />
-                <p id="or">эсвэл</p>
+                <p id="or" class="text-center my-3">эсвэл</p>
               </form>
               <button
                 class="btn"
@@ -464,11 +469,11 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body">
+            <div class="modal-body p-4 m-4">
               <form onsubmit="login" id="nevtreh" class="text-start">
-                <div id="login">
-                  <span></span>
-                  <p>Бүртгүүлэх</p>
+                <div id="login" class="d-flex">
+                  <div class="rectangle"></div>
+                  <p class="ms-2">Бүртгүүлэх</p>
                 </div>
                 <br />
                 <label for="useremail">И-мэйл </label>
@@ -477,6 +482,7 @@
                   name="user_email"
                   id="useremail"
                   placeholder="И-мэйл хаягаа оруулна уу."
+                  class="my-4"
                 />
                 <label for="userpass">Нууц үг</label>
                 <input
@@ -484,6 +490,7 @@
                   name="userpass"
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
+                  class="my-4"
                 />
                 <label for="userpass">Нууц үг давтах</label>
 
@@ -492,21 +499,23 @@
                   name="userpassagain"
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
+                  class="my-4"
                 />
-                <div id="check">
+                <div id="check" class="d-flex align-items-center">
                   <input
                     type="checkbox"
                     name="checkbox"
                     id="checkbox"
-                    style="width: 15px; height: 15px"
+                  
                   />
-                  <label for="checkbox">Үйлчилгээний нөхцөл зөвшөөрөх</label>
+                  <label for="checkbox" class="m-2">Үйлчилгээний нөхцөл зөвшөөрөх</label>
                 </div>
                 <input
                   type="submit"
                   value="Бүртгүүлэх"
                   name="signin"
                   id="signin"
+                  class="mt-4"
                 />
               </form>
             </div>
@@ -523,12 +532,13 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body">
+            <div class="modal-body p-4 m-4">
               <form onsubmit="login" id="nevtreh">
                 <div class="d-flex align-items-center my-4">
-                  <div id="rectangle"></div>
-                  <p class="m-0 mx-2 fPoppins">Нууц үг сэргээх</p>
+                  <div class="rectangle"></div>
+                  <p class="m-0 mx-2">Нууц үг сэргээх</p>
                 </div>
+                <div class="d-flex flex-column">
                 <label for="useremail">И-мэйл </label>
                 <input
                   type="email"
@@ -543,7 +553,8 @@
                   value="Үргэлжлүүлэх"
                   name="signin"
                   id="signin"
-                />
+                  class="my-4"
+                /></div>
               </form>
             </div>
           </div>
@@ -641,27 +652,27 @@
         </button>
       </div>
       <!-- Info Panel -->
-      <div id="features">
-        <div id="inner" class="contents container">
-          <div id="fast" class="boxes">
+      <div id="features" class="d-flex align-items-center justify-content-center">
+        <div id="inner" class="container d-md-flex justify-content-around">
+          <div id="fast" class="boxes d-flex justify-content-center align-items-center my-3">
             <img src="images/delivery3.png" alt="fast" class="feIcon" />
-            <div>
-              <p class="bold">Шуурхай хүргэлт</p>
-              <p class="thin">30 минутанд таны гарт.</p>
+            <div class="" >
+              <p class="bold m-0 ms-2 mb-2">Шуурхай хүргэлт</p>
+              <p class="thin m-0 ms-2">30 минутанд таны гарт.</p>
             </div>
           </div>
-          <div id="healthy" class="boxes">
+          <div id="healthy" class="boxes d-flex justify-content-center align-items-center  my-3">
             <img src="images/delivery2.png" alt="healthy" class="feIcon" />
             <div>
-              <p class="bold">Эрүүл, баталгаат орц</p>
-              <p class="thin">Хамгийн чанартайг танд.</p>
+              <p class="bold m-0 ms-2 mb-2">Эрүүл, баталгаат орц</p>
+              <p class="thin m-0 ms-2">Хамгийн чанартайг танд.</p>
             </div>
           </div>
-          <div id="new" class="boxes">
+          <div id="new" class="boxes d-flex justify-content-center align-items-center  my-3">
             <img src="images/delivery1.png" alt="new" class="feIcon" />
             <div>
-              <p class="bold">Өргөн сонголт</p>
-              <p class="thin">Хамгийн онцгойг танд.</p>
+              <p class="bold m-0 ms-2 mb-2">Өргөн сонголт</p>
+              <p class="thin m-0 ms-2">Хамгийн онцгойг танд.</p>
             </div>
           </div>
         </div>
