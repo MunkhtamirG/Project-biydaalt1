@@ -1,18 +1,13 @@
 .step {
   background-color: #f17228;
-  width: 282px !important;
-  height: 40px;
-  color: azure;
-
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-}
-.stepsize {
-  font-size: 14px;
+  width: 70%;
+  font-size: 16px;
 }
 .address {
   width: 80%;
-  height: 48px;
+  height: 4vh;
   border-radius: 10px;
   margin-top: 20px;
   color: #838383;
@@ -25,22 +20,12 @@
 }
 .addresstext {
   color: #f17228;
-  font-weight: 600;
   font-size: 16px;
 }
-/* .moreinfo {
-  width: 80%;
-  height: 112px;
-  border: #c4c4c4 1px solid;
-  box-sizing: border-box;
-  border-radius: 10px;
-  text-indent: 20px;
-} */
+
 .infotext {
   color: #838383;
   text-indent: 30px;
-  margin-top: 20px;
-  font-weight: 500;
   font-size: 14px;
   width: 80%;
   border-radius: 10px;
@@ -48,9 +33,8 @@
 }
 .phone {
   width: 80%;
-  height: 48px;
+  height: 4vh;
   border: #c4c4c4 1px solid;
-  box-sizing: border-box;
   border-radius: 10px;
 }
 .paymentradio {
@@ -75,11 +59,17 @@
     margin: auto;
   }
   .step {
-    margin-left: 38px !important;
+    width: 50%;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
   .addressbox {
     height: 90vh;
+  }
+  .step {
+    width: 80%;
+    font-size: 12px;
+    margin: auto;
   }
 }
