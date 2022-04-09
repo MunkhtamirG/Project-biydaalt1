@@ -29,10 +29,10 @@
     />
   </head>
   <body>
-    <header class="contents d-flex justify-content-between container">
+    <header class="contents d-flex justify-content-between align-items-center container">
       <!-- More Menu-->
       <button
-        class="btn d-block d-md-none"
+        class="btn d-flex d-md-none justify-content-between "
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasTop"
@@ -58,85 +58,85 @@
         </div>
         <div class="offcanvas-body">
           <div>
-            <div class="userinfo">
-              <a href="../pages/menu.html">
-                <div class="more">
-                  <div>
-                    <div class="icon">
+            <div class="userinfo d-flex flex-column p-4">
+              <a href="menu.html" class="text-dark text-decoration-none">
+                <div class="more p-2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
                       <img
                         src="../images/Tablet/spoon.svg"
                         alt=""
                         class="inicon"
                       />
                     </div>
-                    <p>Хоолны цэс</p>
+                    <p class="ms-2 m-0">Хоолны цэс</p>
                   </div>
                   <img
                     src="../images/Tablet/arrow.svg"
                     alt=""
-                    class="arrow"
-                    style="margin: none"
+                    class="arrow m-0"
+                    
                   /></div
               ></a>
               <span></span>
-              <a href="../pages/delivery.html">
-                <div class="more">
-                  <div>
-                    <div class="icon">
+              <a href="delivery.html" class="text-dark text-decoration-none">
+                <div class="more p-2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
                       <img
                         src="../images/Tablet/mapicon.svg"
                         alt=""
                         class="inicon"
                       />
                     </div>
-                    <p>Хүргэлтийн бүс</p>
+                    <p class="ms-2 m-0">Хүргэлтийн бүс</p>
                   </div>
                   <img
                     src="../images/Tablet/arrow.svg"
                     alt=""
-                    class="arrow"
-                    style="margin: none"
+                    class="arrow m-0"
+                   
                   /></div
               ></a>
             </div>
-            <div class="userinfo">
-              <a href="#">
-                <div class="more">
-                  <div>
-                    <div class="icon">
+            <div class="userinfo d-flex flex-column p-4 ">
+              <a href="#" class="text-dark text-decoration-none">
+                <div class="more p-2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
                       <img
                         src="../images/Tablet/user.svg"
                         alt=""
                         class="inicon"
                       />
                     </div>
-                    <p>Хэрэглэгчийн мэдээлэл</p>
+                    <p class="ms-2 m-0">Хэрэглэгчийн мэдээлэл</p>
                   </div>
                   <img
                     src="../images/Tablet/arrow.svg"
                     alt=""
-                    class="arrow"
-                    style="margin: none"
+                    class="arrow m-0"
+                   
                   /></div
               ></a>
               <span></span>
-              <a href="order.html">
-                <div class="more">
-                  <div>
-                    <div class="icon">
+              <a href="order.html " class="text-dark text-decoration-none">
+                <div class="more p-2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
                       <img
                         src="../images/Tablet/busket.svg"
                         alt=""
                         class="inicon"
                       />
                     </div>
-                    <p>Миний захиалга</p>
+                    <p class="ms-2 m-0">Миний захиалга</p>
                   </div>
                   <img
                     src="../images/Tablet/arrow.svg"
                     alt=""
-                    class="arrow"
-                    style="margin: none"
+                    class="arrow m-0"
+                    
                   /></div
               ></a>
             </div>
@@ -144,30 +144,30 @@
         </div>
       </div>
       <!-- Logo -->
-      <a class="text-decoration-none align-baseline" href="../index.html"
-        ><div id="logo">
+      <a class="text-decoration-none align-baseline m-0  p-2" href="../index.html"
+        ><div id="logo" class="d-flex align-items-center  ">
           <img src="../images/iamage.png" alt="icon" id="homeicon" />
-          <p class="text-decoration-none mt-3" id="name">Food Delivery</p>
+          <p class="text-decoration-none m-0 ms-1" id="name">Food Delivery</p>
         </div></a
       >
       <!-- MENU -->
-      <div class="menu">
-        <a href="../index.html" class="fPoppins">НҮҮР</a>
-        <a href="menu.html" class="fPoppins">ХООЛНЫ ЦЭС</a>
-        <a href="delivery.html" class="fPoppins">ХҮРГЭЛТИЙН БҮС</a>
+      <div class="menu d-none d-md-flex d-flex align-items-center justify-content-between text-decoration-none">
+        <a href="../index.html" class="pe-3 text-decoration-none text-dark">НҮҮР</a>
+        <a href="menu.html" class="pe-3 text-decoration-none text-dark">ХООЛНЫ ЦЭС</a>
+        <a href="delivery.html" class="text-decoration-none text-dark">ХҮРГЭЛТИЙН БҮС</a>
       </div>
       <!-- Right Side -->
-      <div id="icons" class="d-flex justify-content-around">
+      <div  class="d-flex justify-content-between align-items-center">
         <!-- SEARCHBAR -->
-        <div class="search">
-          <input type="search" placeholder="Хайх" id="searchbox" />
+        <div class="search d-none d-lg-flex ">
+          <input type="search" placeholder="Хайх" id="searchbox"  />
         </div>
 
-        <div class="d-flex w-25 justify-content-around w-100">
+        <div class="d-flex  justify-content-between align-items-center">
           <!-- Search Button -->
           <button
             type="button"
-            class="btn"
+            class="btn d-lg-none"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             id="searchicon"
@@ -191,6 +191,7 @@
                     placeholder="Хайх"
                     id="searchbox"
                     class="w-100"
+                    sub
                   />
                 </div>
               </div>
@@ -254,15 +255,15 @@
                       <div class="d-flex d-flex justify-content-between">
                         <p class="m-0">Хулууны зутан</p>
                         <img
-                          src="images/Tablet/cancel2.svg"
+                          src="../images/Tablet/cancel2.svg"
                           alt=""
                           style="width: 15px"
                         />
                       </div>
-                      <p class="price fPoppins">6,800₮</p>
+                      <p class="price">6,800₮</p>
                       <div class="d-flex align-items-center">
-                        <p class="smallbox text-center rounded">-</p>
-                        <p class="smboxinn text-center rounded">1</p>
+                        <p class="smallbox text-center rounded ">-</p>
+                        <p class="smboxinn text-center rounded mx-2">1</p>
                         <p class="smallbox text-center rounded">+</p>
                       </div>
                     </div>
@@ -306,9 +307,9 @@
             >
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <form onsubmit="login" id="nevtreh">
+                  <form onsubmit="login" id="nevtreh" class="p-4">
                     <div id="login">
-                      <span></span>
+                      <span class="rectangle"></span>
                       <p class="m-0 ms-3">Нэвтрэх</p>
                     </div>
                     <label for="useremail" class="">И-мэйл </label>
@@ -352,7 +353,7 @@
                         <div class="modal-content">
                           <form onsubmit="login" id="nevtreh">
                             <div id="login">
-                              <span></span>
+                              <span class="rectangle"></span>
                               <p class="m-0 ms-3">Нэвтрэх</p>
                             </div>
                             <label for="useremail">И-мэйл </label>
@@ -407,11 +408,11 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body" id="nevtreh">
+            <div class="modal-body p-4 m-4" id="nevtreh">
               <form onsubmit="login">
-                <div id="login">
-                  <span></span>
-                  <p>Нэвтрэх</p>
+                <div id="login" class="d-flex align-items-center">
+                  <div class="rectangle"></div>
+                  <p class="m-0 ms-2">Нэвтрэх</p>
                 </div>
                 <br />
                 <label for="useremail">И-мэйл </label>
@@ -420,6 +421,7 @@
                   name="user_email"
                   id="useremail"
                   placeholder="И-мэйл хаягаа оруулна уу."
+                  class="my-4"
                 />
                 <label for="userpass">Нууц үг</label>
                 <input
@@ -427,11 +429,14 @@
                   name="userpass"
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
+                  class="my-4"
+
                 />
                 <a
                   data-bs-target="#forgetmodal"
                   data-bs-toggle="modal"
                   href="forget.html"
+                  class="d-flex justify-content-end"
                   >Нууц үгээ мартсан?</a
                 >
                 <input
@@ -439,8 +444,9 @@
                   value="Нэвтрэх"
                   name="signin"
                   id="signin"
+                  class="mt-4"
                 />
-                <p id="or">эсвэл</p>
+                <p id="or" class="text-center my-3">эсвэл</p>
               </form>
               <button
                 class="btn"
@@ -464,11 +470,11 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body">
+            <div class="modal-body p-4 m-4">
               <form onsubmit="login" id="nevtreh" class="text-start">
-                <div id="login">
-                  <span></span>
-                  <p>Бүртгүүлэх</p>
+                <div id="login" class="d-flex">
+                  <div class="rectangle"></div>
+                  <p class="ms-2">Бүртгүүлэх</p>
                 </div>
                 <br />
                 <label for="useremail">И-мэйл </label>
@@ -477,6 +483,7 @@
                   name="user_email"
                   id="useremail"
                   placeholder="И-мэйл хаягаа оруулна уу."
+                  class="my-4"
                 />
                 <label for="userpass">Нууц үг</label>
                 <input
@@ -484,6 +491,7 @@
                   name="userpass"
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
+                  class="my-4"
                 />
                 <label for="userpass">Нууц үг давтах</label>
 
@@ -492,21 +500,23 @@
                   name="userpassagain"
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
+                  class="my-4"
                 />
-                <div id="check">
+                <div id="check" class="d-flex align-items-center">
                   <input
                     type="checkbox"
                     name="checkbox"
                     id="checkbox"
-                    style="width: 15px; height: 15px"
+                  
                   />
-                  <label for="checkbox">Үйлчилгээний нөхцөл зөвшөөрөх</label>
+                  <label for="checkbox" class="m-2">Үйлчилгээний нөхцөл зөвшөөрөх</label>
                 </div>
                 <input
                   type="submit"
                   value="Бүртгүүлэх"
                   name="signin"
                   id="signin"
+                  class="mt-4"
                 />
               </form>
             </div>
@@ -523,12 +533,13 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body">
+            <div class="modal-body p-4 m-4">
               <form onsubmit="login" id="nevtreh">
                 <div class="d-flex align-items-center my-4">
-                  <div id="rectangle"></div>
-                  <p class="m-0 mx-2 fPoppins">Нууц үг сэргээх</p>
+                  <div class="rectangle"></div>
+                  <p class="m-0 mx-2">Нууц үг сэргээх</p>
                 </div>
+                <div class="d-flex flex-column">
                 <label for="useremail">И-мэйл </label>
                 <input
                   type="email"
@@ -543,7 +554,8 @@
                   value="Үргэлжлүүлэх"
                   name="signin"
                   id="signin"
-                />
+                  class="my-4"
+                /></div>
               </form>
             </div>
           </div>
@@ -551,14 +563,44 @@
       </div>
     </header>
     <main>
-      <div id="menu" class="container">
-        <a href="menu.html" id="first" class="box text-dark">Үндсэн хоол</a>
-        <a href="menu2.html" id="second" class="box text-dark">Салад ба зууш</a>
-        <a href="menu3.html" id="third" class="box">Амттан</a>
-        <a href="menu4.html" id="forth" class="box text-dark">Хямдралтай</a>
+      <div class="container  my-4 d-flex justify-content-around">
+        <a href="menu.html" id="first" class="box text-decoration-none text-dark text-center p-2 me-4"
+          >Үндсэн хоол</a
+        >
+        <a
+          href="menu2.html"
+          id="second"
+          class="box text-decoration-none text-dark p-2 me-4 text-center"
+          >Салад ба зууш</a
+        >
+        <a
+          href="menu3.html"
+          id="third"
+          class="box text-decoration-none text-light p-2 me-4 text-center  "
+          >Амттан</a
+        >
+        <a
+          href="menu4.html"
+          id="forth"
+          class="box text-decoration-none text-dark p-2 me-4 d-none d-md-flex justify-content-center "
+          >Хямдралтай</a
+        >
+        <a
+          href="#"
+          
+          class="box text-decoration-none text-dark p-2 me-4 d-none d-lg-flex opacity-0"
+          >Хямдралтай</a
+        >
+        <a
+          href="#"
+          id="forth"
+          class="box text-decoration-none text-dark p-2 me-4 d-none d-lg-flex opacity-0"
+          >Хямдралтай</a
+        >
       </div>
-      <div id="meals">
-        <div class="card p-0">
+      <div  class="container">
+        <div class="salemeals container d-flex my-4">
+        <div class="card p-0 m-2 w-100">
           <div
             type="button"
             class="btn busketicon text-center d-flex flex-column align-items-center p-0"
@@ -568,133 +610,299 @@
             <img src="../images/basket_icon.png" alt="" />
             <p class="text-light">Сагслах</p>
           </div>
-          <div class="mealpic m-auto">
+          <div class="mealpic p-3">
             <img
               src="../images/desert/unsplash_q54Oxq44MZs.png"
               alt=""
-              class="m-lg-2"
+              class="w-100"
             />
           </div>
-          <div class="des">
-            <p class="name ms-3">Донатс</p>
+          <div class="des px-3">
+            <p class="title  m-0">Донатс</p>
             <div class="price">
-              <p class="ms-3 mb-3">5,800₮</p>
+              <p class="">5,800₮</p>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="busketicon">
-            <img src="../images/basket_icon.png" alt="" />
-            <p>Сагслах</p>
-          </div>
-          <div class="mealpic">
+        <div class="card p-0 m-2 w-100">
+          <div
+              type="button"
+              class="btn busketicon d-flex flex-column align-items-center justify-content-center  p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="../images/basket_icon.png" alt="" class="basketicon" />
+              <p class="text-light">Сагслах</p>
+            </div>
+          <div class="mealpic p-3">
             <img
               src="../images/desert/unsplash_cLpdEA23Z44.png"
               alt=""
-              class="pics"
+              class="w-100"
             />
           </div>
-          <div class="des">
-            <p class="name">Орео дессерт</p>
+          <div class="des px-3">
+            <p class="title  m-0">Орео дессерт</p>
             <div class="price">
               <p>7,800₮</p>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="busketicon">
-            <img src="../images/basket_icon.png" alt="" />
-            <p>Сагслах</p>
-          </div>
-          <div class="mealpic">
+        <div class="card p-0 m-2 w-100">
+          <div
+              type="button"
+              class="btn busketicon d-flex flex-column align-items-center justify-content-center  p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="../images/basket_icon.png" alt="" class="basketicon" />
+              <p class="text-light">Сагслах</p>
+            </div>
+          <div class="mealpic p-3">
             <img
               src="../images/desert/unsplash_jABXuTS1azc.png"
               alt=""
-              class="pics"
+              class="w-100"
             />
           </div>
-          <div class="des">
-            <p class="name">Вафли</p>
+          <div class="des px-3">
+            <p class="title  m-0">Вафли</p>
             <div class="price">
               <p>5,800₮</p>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="busketicon">
-            <img src="../images/basket_icon.png" alt="" />
-            <p>Сагслах</p>
-          </div>
-          <div class="mealpic">
+        <div class="card p-0 m-2 w-100">
+          <div
+              type="button"
+              class="btn busketicon d-flex flex-column align-items-center justify-content-center  p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="../images/basket_icon.png" alt="" class="basketicon" />
+              <p class="text-light">Сагслах</p>
+            </div>
+          <div class="mealpic p-3">
             <img
               src="../images/desert/unsplash_WbZesfqwR-A.png"
               alt=""
-              class="pics"
+              class="w-100"
             />
           </div>
-          <div class="des">
-            <p class="name">Макарон</p>
+          <div class="des px-3">
+            <p class="title  m-0">Макарон</p>
             <div class="price">
               <p>3,800₮</p>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="busketicon">
-            <img src="../images/basket_icon.png" alt="" />
-            <p>Сагслах</p>
-          </div>
-          <div class="mealpic">
-            <div class="percent"><p>20%</p></div>
+      </div>
+      <div class="salemeals container d-flex my-4">
+        <div class="card p-0 m-2 w-100">
+          <div
+              type="button"
+              class="btn busketicon d-flex flex-column align-items-center justify-content-center  p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="../images/basket_icon.png" alt="" class="basketicon" />
+              <p class="text-light">Сагслах</p>
+            </div>
+          <div class="mealpic p-3">
+            <p class="percent px-2 py-1 text-center">20%</p>
             <img
               src="../images/sale/unsplash_TLD6iCOlyb0.png"
               alt=""
-              class="pics"
+              class="w-100"
             />
           </div>
-          <div class="des">
-            <p class="name">Зайрмаг</p>
-            <div class="price">
+          <div class="des px-3">
+            <p class="title  m-0">Зайрмаг</p>
+            <div class="price d-flex">
               <p>4,760₮</p>
-              <p class="oldprice">6,800₮</p>
+              <p class="oldprice ms-2">6,800₮</p>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 m-2 w-100">
+          <div
+              type="button"
+              class="btn busketicon d-flex flex-column align-items-center justify-content-center  p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="../images/basket_icon.png" alt="" class="basketicon" />
+              <p class="text-light">Сагслах</p>
+            </div>
+          <div class="mealpic p-3">
+            <p class="percent px-2 py-1 text-center">20%</p>
+            <img
+              src="../images/sale/unsplash_TLD6iCOlyb0.png"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="des px-3">
+            <p class="title  m-0">Зайрмаг</p>
+            <div class="price d-flex">
+              <p>4,760₮</p>
+              <p class="oldprice ms-2">6,800₮</p>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 m-2 w-100">
+          <div
+              type="button"
+              class="btn busketicon d-flex flex-column align-items-center justify-content-center  p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="../images/basket_icon.png" alt="" class="basketicon" />
+              <p class="text-light">Сагслах</p>
+            </div>
+          <div class="mealpic p-3">
+            <p class="percent px-2 py-1 text-center">20%</p>
+            <img
+              src="../images/sale/unsplash_TLD6iCOlyb0.png"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="des px-3">
+            <p class="title  m-0">Зайрмаг</p>
+            <div class="price d-flex">
+              <p>4,760₮</p>
+              <p class="oldprice ms-2">6,800₮</p>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 m-2 w-100">
+          <div
+              type="button"
+              class="btn busketicon d-flex flex-column align-items-center justify-content-center  p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="../images/basket_icon.png" alt="" class="basketicon" />
+              <p class="text-light">Сагслах</p>
+            </div>
+          <div class="mealpic p-3">
+            <p class="percent px-2 py-1 text-center">20%</p>
+            <img
+              src="../images/sale/unsplash_TLD6iCOlyb0.png"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="des px-3">
+            <p class="title  m-0">Зайрмаг</p>
+            <div class="price d-flex">
+              <p>4,760₮</p>
+              <p class="oldprice ms-2">6,800₮</p>
             </div>
           </div>
         </div>
       </div>
+      </div>
     </main>
-    <footer>
-      <div id="bot" class="container">
-        <div class="uptext">
-          <img
-            src="../images/footlogo.png"
-            alt=""
-            width="176px"
-            height="40px"
-            id="footlogo"
-          />
-          <div class="footertext">
-            <div class="footmenu">
-              <a href="../index.html">Нүүр</a>
-              <a href="menu.html">Хоолны цэс</a>
-              <a href="delivery.html">Хүргэлтийн бүс</a>
+  <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div id="modal" class="modal-body d-flex justify-content-around">
+            <div class="p-1">
+              <img
+                class="rounded"
+                src="../images/meal.svg"
+                alt=""
+                style="width: 100%"
+              />
             </div>
-            <div class="contact">
-              <p>Холбоо барих</p>
-              <p>(976) 77123456</p>
-              <p>(976) 77123456</p>
+            <div
+              class="align-content-between justify-content-between p-2 ms-4 d-flex flex-column"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mt-4"
+              >
+                <p class="fs-5 fPoppins fw-bolder">Хулууны зутан</p>
+                <p class="fPoppins price">6,800₮</p>
+              </div>
+              <hr />
+              <div>
+                <p class="fw-bolder fPoppins">Орц</p>
+                <p class="p-2 rounded orts fPoppins">
+                  Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+                </p>
+              </div>
+
+              <div>
+                <p class="fw-bolder mt-4 fPoppins">Тоо</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn bgofbutton col-2 text-white">-</button>
+                  <p class="m-0 p-2 rounded col-7 modalnum text-center">1</p>
+                  <button class="btn bgofbutton col-2 text-white">+</button>
+                </div>
+              </div>
+              <div class="mt-4 text-center">
+                <button
+                  class="btn col-12 bgofbutton fPoppins fw-bolder text-white"
+                >
+                  Сагслах
+                </button>
+              </div>
+            </div>
+            <div class="col-1 text-end">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
           </div>
         </div>
-        <div id="socialmobile">
+      </div>
+    </div>
+    <footer class="mt-4">
+      <div id="bot" class="container">
+        <div class="uptext d-md-flex  justify-content-between container py-4">
+          <img
+            src="../images/footlogo.png"
+            alt=""
+            class="w-20"
+            id="footlogo"
+          />
+          <div class="d-flex justify-content-between col-lg-4 col-md-5">
+            <div class="footmenu me-4 w-100">
+              <a href="../index.html" class="d-block text-light my-2">Нүүр</a>
+              <a href="menu.html" class="d-block text-light my-2">Хоолны цэс</a>
+              <a href="delivery.html" class="d-block text-light my-2">Хүргэлтийн бүс</a>
+            </div>
+            <div class="contact text-end w-100">
+              <p class="m-0 my-2">Холбоо барих</p>
+              <p class="m-0 my-2">(976) 77123456</p>
+              <p class="m-0 my-2">(976) 77123456</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="d-flex d-md-none justify-content-center">
           <img src="../images/Tablet/fb.svg" alt="" />
-          <img src="../images/Tablet/ig.svg" alt="" />
+          <img src="../images/Tablet/ig.svg" alt="" class="mx-3" />
           <img src="../images/Tablet/twitter.svg" alt="" />
         </div>
         <div class="bottonline"></div>
-        <div id="foottext">
-          <div id="social">
-            <p>Бидэнтэй нэгдээрэй</p>
-            <div id="socialicon">
+        <div class="d-flex justify-content-between">
+          <div id="social" class="d-none d-md-block">
+            <p class="mt-2">Бидэнтэй нэгдээрэй</p>
+            <div id="socialicon" class="d-flex justify-content-around align-items-center">
               <a href="https://www.facebook.com/" target="blank">
                 <img src="../images/Socialicon/fb.png" alt="fb"
               /></a>
@@ -706,12 +914,12 @@
               /></a>
             </div>
           </div>
-          <div id="lasttext">
-            <div id="terms">
-              <a href="terms.html">Үйлчилгээний нөхцөл</a>
-              <a href="privacy.html">Нууцлалын бодлого</a>
+          <div id="lasttext" class="d-flex justify-content-between w-50 text-end">
+            <div id="terms" class="d-lg-flex justify-content-between w-100">
+              <a href="terms.html" class="w-100 mt-2 d-block text-start">Үйлчилгээний нөхцөл</a>
+              <a href="privacy.html" class="w-100 mt-2 d-block text-start">Нууцлалын бодлого</a>
             </div>
-            <div id="copyright">
+            <div id="copyright" class="w-100 mt-2">
               <p>© 2020 MStars Foods LLC</p>
               <p>Зохиогчийн эрх хуулиар хамгаалагдсан.</p>
             </div>
