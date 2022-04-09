@@ -39,7 +39,7 @@
         data-bs-target="#offcanvasTop"
         aria-controls="offcanvasTop"
       >
-        <img src="../images/Tablet/more.svg" alt="" />
+        <img src="images/Tablet/more.svg" alt="" />
       </button>
       <!-- More Menu OffCanvas -->
       <div
@@ -60,7 +60,7 @@
         <div class="offcanvas-body">
           <div>
             <div class="userinfo d-flex flex-column p-4">
-              <a href="menu.html" class="text-dark text-decoration-none">
+              <a href="../pages/menu.html" class="text-dark text-decoration-none">
                 <div class="more p-2 d-flex justify-content-between align-items-center">
                   <div class="d-flex align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center">
@@ -145,17 +145,17 @@
         </div>
       </div>
       <!-- Logo -->
-      <a class="text-decoration-none align-baseline m-0  p-2" href="../index.html"
+      <a class="text-decoration-none align-baseline m-0  p-2" href="index.html"
         ><div id="logo" class="d-flex align-items-center  ">
-          <img src="../images/iamage.png" alt="icon" id="homeicon" />
+          <img src="images/iamage.png" alt="icon" id="homeicon" />
           <p class="text-decoration-none m-0 ms-1" id="name">Food Delivery</p>
         </div></a
       >
       <!-- MENU -->
       <div class="menu d-none d-md-flex d-flex align-items-center justify-content-between text-decoration-none">
-        <a href="../index.html" class="pe-3 text-decoration-none text-dark">НҮҮР</a>
-        <a href="menu.html" class="pe-3 text-decoration-none text-dark">ХООЛНЫ ЦЭС</a>
-        <a href="delivery.html" class="text-decoration-none text-dark">ХҮРГЭЛТИЙН БҮС</a>
+        <a href="index.html" class="pe-3 text-decoration-none text-dark">НҮҮР</a>
+        <a href="pages/menu.html" class="pe-3 text-decoration-none text-dark">ХООЛНЫ ЦЭС</a>
+        <a href="pages/delivery.html" class="text-decoration-none text-dark">ХҮРГЭЛТИЙН БҮС</a>
       </div>
       <!-- Right Side -->
       <div  class="d-flex justify-content-between align-items-center">
@@ -173,7 +173,7 @@
             data-bs-target="#exampleModal"
             id="searchicon"
           >
-            <img src="../images/Tablet/search icon.svg" alt="" />
+            <img src="images/Tablet/search icon.svg" alt="" />
           </button>
 
           <!-- Search Modal -->
@@ -207,7 +207,7 @@
               data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"
             >
-              <img src="../images/Tablet/busket.svg" alt="" class="me-1" />
+              <img src="images/Tablet/busket.svg" alt="" class="me-1" />
               Сагс
             </button>
             <button
@@ -217,7 +217,7 @@
               data-bs-target="#offcanvasRight"
               aria-controls="offcanvasRight"
             >
-              <img src="../images/Tablet/busket.svg" alt="" class="me-1" />
+              <img src="images/Tablet/busket.svg" alt="" class="me-1" />
             </button>
 
             <div
@@ -247,7 +247,7 @@
                   <div class="d-flex">
                     <div class="col-4">
                       <img
-                        src="../images/desert/unsplash_cLpdEA23Z44.png"
+                        src="images/desert/unsplash_cLpdEA23Z44.png"
                         alt=""
                         class="w-100"
                       />
@@ -256,9 +256,9 @@
                       <div class="d-flex d-flex justify-content-between">
                         <p class="m-0">Хулууны зутан</p>
                         <img
-                          src="../images/Tablet/cancel2.svg"
+                          src="images/Tablet/cancel2.svg"
                           alt=""
-                          
+                          style="width: 15px"
                         />
                       </div>
                       <p class="price">6,800₮</p>
@@ -275,7 +275,7 @@
                   <p class="fs-5">Нийт: 6,800₮</p>
                   <button
                     class="btn fs-5 me-3 canvasbox"
-                    onclick="location.href='order.html'"
+                    onclick="location.href='pages/order.html'"
                   >
                     Захиалах
                   </button>
@@ -288,7 +288,7 @@
               data-bs-toggle="modal"
               href="#exampleModalToggle"
               role="button"
-              ><img src="../images/Tablet/user.svg" alt="" class="me-1" />
+              ><img src="images/Tablet/user.svg" alt="" class="me-1" />
               Нэвтрэх</a
             >
 
@@ -297,7 +297,7 @@
               data-bs-toggle="modal"
               href="#exampleModalToggle"
               role="button"
-              ><img src="../images/Tablet/user.svg" alt="" class="me-1"
+              ><img src="images/Tablet/user.svg" alt="" class="me-1"
             /></a>
             <div
               class="modal fade text-center"
@@ -308,9 +308,9 @@
             >
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <form onsubmit="login" id="nevtreh">
+                  <form onsubmit="login" id="nevtreh" class="p-4">
                     <div id="login">
-                      <span></span>
+                      <span class="rectangle"></span>
                       <p class="m-0 ms-3">Нэвтрэх</p>
                     </div>
                     <label for="useremail" class="">И-мэйл </label>
@@ -354,7 +354,7 @@
                         <div class="modal-content">
                           <form onsubmit="login" id="nevtreh">
                             <div id="login">
-                              <span></span>
+                              <span class="rectangle"></span>
                               <p class="m-0 ms-3">Нэвтрэх</p>
                             </div>
                             <label for="useremail">И-мэйл </label>
@@ -409,11 +409,11 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body" id="nevtreh">
+            <div class="modal-body p-4 m-4" id="nevtreh">
               <form onsubmit="login">
-                <div id="login">
-                  <span></span>
-                  <p>Нэвтрэх</p>
+                <div id="login" class="d-flex align-items-center">
+                  <div class="rectangle"></div>
+                  <p class="m-0 ms-2">Нэвтрэх</p>
                 </div>
                 <br />
                 <label for="useremail">И-мэйл </label>
@@ -422,6 +422,7 @@
                   name="user_email"
                   id="useremail"
                   placeholder="И-мэйл хаягаа оруулна уу."
+                  class="my-4"
                 />
                 <label for="userpass">Нууц үг</label>
                 <input
@@ -429,11 +430,14 @@
                   name="userpass"
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
+                  class="my-4"
+
                 />
                 <a
                   data-bs-target="#forgetmodal"
                   data-bs-toggle="modal"
                   href="forget.html"
+                  class="d-flex justify-content-end"
                   >Нууц үгээ мартсан?</a
                 >
                 <input
@@ -441,8 +445,9 @@
                   value="Нэвтрэх"
                   name="signin"
                   id="signin"
+                  class="mt-4"
                 />
-                <p id="or">эсвэл</p>
+                <p id="or" class="text-center my-3">эсвэл</p>
               </form>
               <button
                 class="btn"
@@ -466,11 +471,11 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body">
+            <div class="modal-body p-4 m-4">
               <form onsubmit="login" id="nevtreh" class="text-start">
-                <div id="login">
-                  <span></span>
-                  <p>Бүртгүүлэх</p>
+                <div id="login" class="d-flex">
+                  <div class="rectangle"></div>
+                  <p class="ms-2">Бүртгүүлэх</p>
                 </div>
                 <br />
                 <label for="useremail">И-мэйл </label>
@@ -479,6 +484,7 @@
                   name="user_email"
                   id="useremail"
                   placeholder="И-мэйл хаягаа оруулна уу."
+                  class="my-4"
                 />
                 <label for="userpass">Нууц үг</label>
                 <input
@@ -486,6 +492,7 @@
                   name="userpass"
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
+                  class="my-4"
                 />
                 <label for="userpass">Нууц үг давтах</label>
 
@@ -494,21 +501,23 @@
                   name="userpassagain"
                   id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
+                  class="my-4"
                 />
-                <div id="check">
+                <div id="check" class="d-flex align-items-center">
                   <input
                     type="checkbox"
                     name="checkbox"
                     id="checkbox"
-                    style="width: 15px; height: 15px"
+                  
                   />
-                  <label for="checkbox">Үйлчилгээний нөхцөл зөвшөөрөх</label>
+                  <label for="checkbox" class="m-2">Үйлчилгээний нөхцөл зөвшөөрөх</label>
                 </div>
                 <input
                   type="submit"
                   value="Бүртгүүлэх"
                   name="signin"
                   id="signin"
+                  class="mt-4"
                 />
               </form>
             </div>
@@ -525,12 +534,13 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body">
+            <div class="modal-body p-4 m-4">
               <form onsubmit="login" id="nevtreh">
                 <div class="d-flex align-items-center my-4">
-                  <div id="rectangle"></div>
-                  <p class="m-0 mx-2 fPoppins">Нууц үг сэргээх</p>
+                  <div class="rectangle"></div>
+                  <p class="m-0 mx-2">Нууц үг сэргээх</p>
                 </div>
+                <div class="d-flex flex-column">
                 <label for="useremail">И-мэйл </label>
                 <input
                   type="email"
@@ -545,7 +555,8 @@
                   value="Үргэлжлүүлэх"
                   name="signin"
                   id="signin"
-                />
+                  class="my-4"
+                /></div>
               </form>
             </div>
           </div>

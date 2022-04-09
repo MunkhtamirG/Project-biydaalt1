@@ -69,6 +69,9 @@
   .price {
     font-size: 14px;
   }
+  .busketicon:hover {
+    opacity: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .percent {
@@ -86,6 +89,9 @@
   }
   .price {
     font-size: 12px;
+  }
+  .busketicon:hover {
+    opacity: 0;
   }
 }
 
