@@ -1,21 +1,13 @@
-#top span {
-  width: 11px;
-  height: 30px;
-  background-color: #f17228;
-  margin-right: 20px;
-}
-#top {
-  
-  
-  font-weight: 700;
+.text {
   font-size: 18px;
-  display: flex;
-  align-items: center;
 }
-#text {
-  margin-bottom: 30px;
-  font-weight: 400;
-  font-size: 18px;
-  
-  
+@media screen and (max-width: 1024px){
+  .text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px){
+  .text {
+    font-size: 14px;
+  }
 }
