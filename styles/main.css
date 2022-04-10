@@ -23,7 +23,7 @@
 }
 .slidertext {
   color: #f17228;
-  font-size: 55px;
+  font-size: 5vw;
 }
 .slidertext2 {
   font-family: "Comfortaa";
@@ -135,7 +135,7 @@
     font-size: 14px;
   }
   .slidertext {
-    font-size: 40px;
+    /* font-size: 40px; */
   }
   .slidertext2 {
     font-size: 18px;
@@ -160,7 +160,7 @@
     width: 60vw;
   }
   .slidertext {
-    font-size: 22px !important;
+    /* font-size: 22px !important; */
   }
   .slidertext2 {
     font-size: 12px !important;

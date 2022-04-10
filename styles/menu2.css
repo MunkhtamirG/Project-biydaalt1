@@ -34,6 +34,6 @@ body {
 }
 @media screen and (max-width: 767px) {
   .box {
-    font-size: 12px;
+    font-size: 10px;
   }
 }

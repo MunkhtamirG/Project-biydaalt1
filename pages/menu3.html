@@ -602,14 +602,14 @@
         <div class="salemeals container d-flex my-4">
         <div class="card p-0 m-2 w-100">
           <div
-            type="button"
-            class="btn busketicon text-center d-flex flex-column align-items-center p-0"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            <img src="../images/basket_icon.png" alt="" />
-            <p class="text-light">Сагслах</p>
-          </div>
+              type="button"
+              class="btn busketicon d-flex flex-column align-items-center justify-content-center  p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="../images/basket_icon.png" alt="" class="basketicon" />
+              <p class="text-light">Сагслах</p>
+            </div>
           <div class="mealpic p-3">
             <img
               src="../images/desert/unsplash_q54Oxq44MZs.png"
@@ -805,71 +805,73 @@
       </div>
       </div>
     </main>
+  <!-- Order Modal -->
   <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div id="modal" class="modal-body d-flex justify-content-around">
-            <div class="p-1">
-              <img
-                class="rounded"
-                src="../images/meal.svg"
-                alt=""
-                style="width: 100%"
-              />
-            </div>
-            <div
-              class="align-content-between justify-content-between p-2 ms-4 d-flex flex-column"
-            >
-              <div
-                class="d-flex justify-content-between align-items-center mt-4"
-              >
-                <p class="fs-5 fPoppins fw-bolder">Хулууны зутан</p>
-                <p class="fPoppins price">6,800₮</p>
-              </div>
-              <hr />
-              <div>
-                <p class="fw-bolder fPoppins">Орц</p>
-                <p class="p-2 rounded orts fPoppins">
-                  Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
-                </p>
-              </div>
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div id="modal" class="modal-content m-auto">
+      <div
+        class="modal-body d-lg-flex justify-content-around m-auto w-100"
+      >
+        <div class="text-end order-1 order-md-4">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="p-2 order-2">
+          <img
+            class="rounded m-auto w-100"
+            src="../images/meal.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="align-content-between order-3 justify-content-between p-2 d-flex flex-column"
+        >
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="fs-5 fPoppins fw-bolder">Хулууны зутан</p>
+            <p class="fPoppins price">6,800₮</p>
+          </div>
+          <hr />
+          <div>
+            <p class="fw-bolder fPoppins">Орц</p>
+            <p class="p-2 rounded orts fPoppins">
+              Хулуу, төмс, лууван , сонгино, цөцгийн тос, самрын үр
+            </p>
+          </div>
 
-              <div>
-                <p class="fw-bolder mt-4 fPoppins">Тоо</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <button class="btn bgofbutton col-2 text-white">-</button>
-                  <p class="m-0 p-2 rounded col-7 modalnum text-center">1</p>
-                  <button class="btn bgofbutton col-2 text-white">+</button>
-                </div>
-              </div>
-              <div class="mt-4 text-center">
-                <button
-                  class="btn col-12 bgofbutton fPoppins fw-bolder text-white"
-                >
-                  Сагслах
-                </button>
-              </div>
+          <div>
+            <p class="fw-bolder mt-4 fPoppins">Тоо</p>
+            <div
+              class="d-flex justify-content-between align-items-center"
+            >
+              <button class="btn bgofbutton col-2 text-white">-</button>
+              <p class="m-0 p-2 rounded col-7 modalnum text-center">1</p>
+              <button class="btn bgofbutton col-2 text-white">+</button>
             </div>
-            <div class="col-1 text-end">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <button
+              class="btn col-12 bgofbutton fPoppins fw-bolder text-white"
+            >
+              Сагслах
+            </button>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
     <footer class="mt-4">
       <div id="bot" class="container">
         <div class="uptext d-md-flex  justify-content-between container py-4">
