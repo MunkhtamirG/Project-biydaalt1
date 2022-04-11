@@ -31,6 +31,9 @@ body {
   .box {
     font-size: 14px;
   }
+  main {
+    min-height: calc(100vh - 431px);
+  }
 }
 @media screen and (max-width: 767px) {
   .box {

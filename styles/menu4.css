@@ -1,4 +1,3 @@
-
 .box {
   border: 1px solid #fbc5a6;
   border-radius: 20px;
@@ -16,8 +15,10 @@
 }
 body {
   animation: fadeInAnimation ease 1s;
-  /* animation-iteration-count: 1; */
   animation-fill-mode: forwards;
+}
+main {
+  min-height: calc(100vh - 411px);
 }
 
 @keyframes fadeInAnimation {
@@ -31,6 +32,9 @@ body {
 @media screen and (max-width: 1024px) {
   .box {
     font-size: 14px;
+  }
+  main {
+    min-height: calc(100vh - 431px);
   }
 }
 @media screen and (max-width: 767px) {
