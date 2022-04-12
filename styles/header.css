@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 #logo {
   color: #f17228;
@@ -31,7 +31,7 @@ body {
 .canHeadText {
   color: #b6b4b4;
 }
-#offcanvasTop {
+#moreMenu {
   margin-top: 5vh;
 }
 .userinfo {
@@ -63,15 +63,15 @@ body {
 }
 .smallbox {
   width: 20%;
-   background-color: #f17228;
-   color: #ffffff;
- }
- .smboxinn {
-   width: 100%;
-   background-color: #fff1e9;
-   color: #f17228;
- }
- .orange {
+  background-color: #f17228;
+  color: #ffffff;
+}
+.smboxinn {
+  width: 100%;
+  background-color: #fff1e9;
+  color: #f17228;
+}
+.orange {
   border: #f17228 1px solid;
 }
 .canvasbox {
@@ -96,11 +96,8 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-   #name {
+  #name {
     font-weight: 700;
     font-size: 14px;
   }
 }
-
-
-

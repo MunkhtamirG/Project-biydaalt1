@@ -42,8 +42,8 @@
         class="btn d-flex d-md-none justify-content-between"
         type="button"
         data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasTop"
-        aria-controls="offcanvasTop"
+        data-bs-target="#moreMenu"
+        aria-controls="moreMenu"
       >
         <img src="images/Tablet/more.svg" alt="" />
       </button>
@@ -51,11 +51,11 @@
       <div
         class="offcanvas offcanvas-start"
         tabindex="-1"
-        id="offcanvasTop"
-        aria-labelledby="offcanvasTopLabel"
+        id="moreMenu"
+        aria-labelledby="moreMenuLabel"
       >
         <div class="offcanvas-header">
-          <h5 id="offcanvasTopLabel"></h5>
+          <h5 id="moreMenuLabel"></h5>
           <button
             type="button"
             class="btn-close text-reset"
@@ -340,7 +340,7 @@
             >
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <form onsubmit="login" id="nevtreh" class="p-4">
+                  <form onsubmit="login" class="nevtreh p-4">
                     <div id="login">
                       <span class="rectangle"></span>
                       <p class="m-0 ms-3">Нэвтрэх</p>
@@ -349,14 +349,14 @@
                     <input
                       type="email"
                       name="user_email"
-                      id="useremail"
+                      class="useremail"
                       placeholder="И-мэйл хаягаа оруулна уу."
                     />
                     <label for="userpass">Нууц үг</label>
                     <input
                       type="password"
                       name="userpass"
-                      id="userpass"
+                      class="userpass"
                       placeholder="Нууц үгээ оруулна уу."
                     />
                     <a href="forget.html">Нууц үгээ мартсан?</a>
@@ -364,27 +364,25 @@
                       type="submit"
                       value="Нэвтрэх"
                       name="signin"
-                      id="signin"
+                      class="signin"
                     />
                     <p id="or">эсвэл</p>
                     <button
-                      class="btn align-items-center d-flex justify-content-around fPoppins busketText"
+                      class="signup btn align-items-center d-flex justify-content-around fPoppins busketText"
                       data-bs-toggle="modal"
-                      data-bs-target="#signupmodal"
-                      id="signup"
+                      data-bs-target=".nevtreh"
                     >
                       Бүртгүүлэх
                     </button>
                     <div
                       class="modal fade"
-                      id="signupmodal"
                       tabindex="-1"
                       aria-labelledby="exampleModalLabel2"
                       aria-hidden="true"
                     >
                       <div class="modal-dialog">
                         <div class="modal-content">
-                          <form onsubmit="login" id="nevtreh">
+                          <form onsubmit="login" class="nevtreh">
                             <div id="login">
                               <span class="rectangle"></span>
                               <p class="m-0 ms-3">Нэвтрэх</p>
@@ -393,14 +391,14 @@
                             <input
                               type="email"
                               name="user_email"
-                              id="useremail"
+                              class="useremail"
                               placeholder="И-мэйл хаягаа оруулна уу."
                             />
                             <label for="userpass">Нууц үг</label>
                             <input
                               type="password"
                               name="userpass"
-                              id="userpass"
+                              class="userpass"
                               placeholder="Нууц үгээ оруулна уу."
                             />
                             <a href="forget.html">Нууц үгээ мартсан?</a>
@@ -408,15 +406,14 @@
                               type="submit"
                               value="Нэвтрэх"
                               name="signin"
-                              id="signin"
+                              class="signin"
                             />
                             <p id="or">эсвэл</p>
                             <button
-                              class="btn align-items-center d-flex justify-content-around fPoppins busketText"
+                              class="signup btn align-items-center d-flex justify-content-around fPoppins busketText"
                               type="button"
                               data-bs-toggle="modal"
-                              data-bs-target="#signupmodal"
-                              id="signup"
+                              data-bs-target=".signupmodal"
                             >
                               Бүртгүүлэх
                             </button>
@@ -441,7 +438,7 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-body p-4 m-4" id="nevtreh">
+            <div class="modal-body p-4 m-4 nevtreh">
               <form onsubmit="login">
                 <div id="login" class="d-flex align-items-center">
                   <div class="rectangle"></div>
@@ -452,17 +449,15 @@
                 <input
                   type="email"
                   name="user_email"
-                  id="useremail"
                   placeholder="И-мэйл хаягаа оруулна уу."
-                  class="my-4"
+                  class="my-4 useremail"
                 />
                 <label for="userpass">Нууц үг</label>
                 <input
                   type="password"
                   name="userpass"
-                  id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
-                  class="my-4"
+                  class="my-4 userpass"
                 />
                 <a
                   data-bs-target="#forgetmodal"
@@ -475,16 +470,14 @@
                   type="submit"
                   value="Нэвтрэх"
                   name="signin"
-                  id="signin"
-                  class="mt-4"
+                  class="mt-4 signin"
                 />
                 <p id="or" class="text-center my-3">эсвэл</p>
               </form>
               <button
-                class="btn"
+                class="btn signup"
                 data-bs-target="#signupmodal1"
                 data-bs-toggle="modal"
-                id="signup"
               >
                 Бүртгүүлэх
               </button>
@@ -494,8 +487,7 @@
       </div>
       <!-- Register Modal -->
       <div
-        class="modal fade"
-        id="signupmodal1"
+        class="modal fade signup"
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel2"
         tabindex="-1"
@@ -503,7 +495,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body p-4 m-4">
-              <form onsubmit="login" id="nevtreh" class="text-start">
+              <form onsubmit="login" class="nevtreh text-start">
                 <div id="login" class="d-flex">
                   <div class="rectangle"></div>
                   <p class="ms-2">Бүртгүүлэх</p>
@@ -513,26 +505,23 @@
                 <input
                   type="email"
                   name="user_email"
-                  id="useremail"
                   placeholder="И-мэйл хаягаа оруулна уу."
-                  class="my-4"
+                  class="my-4 useremail"
                 />
                 <label for="userpass">Нууц үг</label>
                 <input
                   type="password"
                   name="userpass"
-                  id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
-                  class="my-4"
+                  class="my-4 userpass"
                 />
                 <label for="userpass">Нууц үг давтах</label>
 
                 <input
                   type="password"
                   name="userpassagain"
-                  id="userpass"
                   placeholder="Нууц үгээ оруулна уу."
-                  class="my-4"
+                  class="my-4 userpass"
                 />
                 <div id="check" class="d-flex align-items-center">
                   <input type="checkbox" name="checkbox" id="checkbox" />
@@ -544,8 +533,7 @@
                   type="submit"
                   value="Бүртгүүлэх"
                   name="signin"
-                  id="signin"
-                  class="mt-4"
+                  class="mt-4 signin"
                 />
               </form>
             </div>
@@ -563,7 +551,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body p-4 m-4">
-              <form onsubmit="login" id="nevtreh">
+              <form onsubmit="login" class="nevtreh">
                 <div class="d-flex align-items-center my-4">
                   <div class="rectangle"></div>
                   <p class="m-0 mx-2">Нууц үг сэргээх</p>
@@ -573,17 +561,15 @@
                   <input
                     type="email"
                     name="user_email"
-                    id="useremail"
                     placeholder="И-мэйл хаягаа оруулна уу."
-                    class="my-4"
+                    class="my-4 useremail"
                   />
 
                   <input
                     type="submit"
                     value="Үргэлжлүүлэх"
                     name="signin"
-                    id="signin"
-                    class="my-4"
+                    class="my-4 signin"
                   />
                 </div>
               </form>
