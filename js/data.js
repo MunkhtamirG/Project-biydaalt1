@@ -143,5 +143,3 @@ data-bs-target="#staticBackdrop"
 <p class="text-light">Сагслах</p>
 </div>`;
 }
-let some = foods[1].category == "Хямдралтай";
-console.log(some);
