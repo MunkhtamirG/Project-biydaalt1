@@ -6,6 +6,11 @@
     rgba(255, 255, 255, 0) 41.19%
   );
 }
+.rectangle {
+  width: 10px;
+  height: 3vh;
+  background-color: #f17228;
+}
 #inner {
   height: 60%;
   /* width: 100%; */
