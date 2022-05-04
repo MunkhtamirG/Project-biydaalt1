@@ -1,12 +1,12 @@
 const createFoods = (arr, container) => {
   let html = document.querySelector(container);
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i].discount > 0) {
-      let dissPrice = arr[i].price - (arr[i].price * arr[i].discount) / 100;
+  arr.map((item) => {
+    if (item.discount > 0) {
+      let dissPrice = item.price - (item.price * item.discount) / 100;
       let card = `<div class="card p-0 m-2 w-100">
-    <div class="mealpic p-3"><img src=${arr[i].pic} alt="" class="w-100" /><p class='percent p-1 px-2'>${arr[i].discount}%</p></div>
-    <div class="des px-3"><p class="title m-0">${arr[i].name}</p><div class="price d-flex">
-    <p class="me-2">${dissPrice}₮</p><p class="oldprice">${arr[i].price}₮</p>
+    <div class="mealpic p-3"><img src=${item.pic} alt="" class="w-100" /><p class='percent p-1 px-2'>${item.discount}%</p></div>
+    <div class="des px-3"><p class="title m-0">${item.name}</p><div class="price d-flex">
+    <p class="me-2">${dissPrice}₮</p><p class="oldprice">${item.price}₮</p>
   </div></div><div
   type="button"
   class="btn busketicon d-flex flex-column align-items-center justify-content-center p-0"
@@ -20,9 +20,9 @@ const createFoods = (arr, container) => {
       html.innerHTML += card;
     } else {
       let card = `<div class="card p-0 m-2 w-100">
-    <div class="mealpic p-3"><img src=${arr[i].pic} alt="" class="w-100" /></div>
-    <div class="des px-3"><p class="title m-0">${arr[i].name}</p><div class="price d-flex">
-    <p class="me-2">${arr[i].price}₮</p>
+    <div class="mealpic p-3"><img src=${item.pic} alt="" class="w-100" /></div>
+    <div class="des px-3"><p class="title m-0">${item.name}</p><div class="price d-flex">
+    <p class="me-2">${item.price}₮</p>
   </div></div><div
   type="button"
   class="btn busketicon d-flex flex-column align-items-center justify-content-center p-0"
@@ -35,7 +35,7 @@ const createFoods = (arr, container) => {
   </div>`;
       html.innerHTML += card;
     }
-  }
+  });
 };
 
 const xhrFood = new XMLHttpRequest();
